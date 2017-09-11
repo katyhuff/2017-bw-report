@@ -11,6 +11,7 @@
 \usepackage{amsfonts}
 \usepackage{amsmath}
 \usepackage{placeins}
+\usepackage[hyphens]{url}
 \usepackage[hidelinks]{hyperref}
 
 \author{Kathryn Huff
@@ -50,13 +51,13 @@ an advanced, molten-salt-fueled nuclear reactor.
 \section{Description of research activities and results}
 
 ARFC Blue Waters activity began in November 2016 when access to the ARFC 
-allocation was initiated for PI Huff.  In the ten months since the start of 
-this allocation, Blue Waters has enabled ARFC to develop and test a first of 
-its kind finite element model of the transient neutronics and thermal 
+allocation was initiated for PI Huff. In the ten months since the start of 
+this allocation, Blue Waters has enabled ARFC to develop and test a 
+first-of-its-kind finite element model of the transient neutronics and thermal 
 hydraulics in a liquid-fueled molten salt reactor design 
-\cite{lindsay_moltres_2017}. 
+\cite{lindsay_arfc/moltres:_2017}. 
 
-\subsection{Key Challenges:}
+\subsection{Key Challenges}
 The current state of the art in advanced nuclear reactor simulation (e.g. the
 CASL DOE innovation hub) is focused on more traditional light water reactors.
 This work extends that state of the art by enabling similarly high fidelity
@@ -71,7 +72,7 @@ design. Future work will include similarly challenging materials and geometries
 such as those in sodium cooled, gas cooled, and very high temperature reactor
 designs which promise advanced safety or sustainability.
 
-\subsection{Why it Matters:} 
+\subsection{Why it Matters} 
 
 %description of the potential impact of solving this research problem, and, if 
 %appropriate, the educational outcomes. For exploratory allocations, indicate 
@@ -97,7 +98,7 @@ foundation for future funding through the Department of Energy Office of
 Nuclear Energy. 
 
 
-\subsection{Why Blue Waters:} To assess nuclear reactor performance under a
+\subsection{Why Blue Waters} To assess nuclear reactor performance under a
 variety of conditions and dynamic transients, the ARFC group must conduct
 myriad 2-dimensional and 3-dimensional finite element simulations using the
 MOOSE framework and our in-house developed modules. This class of simulations commonly
@@ -110,15 +111,15 @@ These may occupy up to 100,000 CPU cores at a time. Only a few of those larger
 simulations will be necessary to enable better understanding of the dynamics in
 these reactor systems.
 
-\subsection{Accomplishments:} 
-Moltres \cite{lindsay_moltres_2016} is
+\subsection{Accomplishments} 
+Moltres \cite{lindsay_arfc/moltres:_2017} is
 a physics application for multiphysics modeling of fluid-fuelled molten salt
 reactors (MSRs). It couples equations for neutron diffusion, thermal
 hydraulics, and delayed neutron precursor transport. Neutron diffusion and
 precursor transport equations are set up using an action system that allows the
 user to use an arbitrary number of neutron energy and precursor groups
 respectively with minimal input changes. Moltres sits atop the Multi-physics
-Object-Oriented Simulation Environment \cite{gaston_moose_2010} which gives it the
+Object-Oriented Simulation Environment \cite{gaston_moose:_2009} which gives it the
 capability to run seamlessly in massively parallel environments. To date,
 Moltres has been used to simulate MSRs in 2D-axisymmetric and 3D geometric
 configurations. As these simulations increase in fidelity, their results will
@@ -188,6 +189,14 @@ model as well as investigating various transient accident scenarios.
 
 %Highlight any keynote or other presentations that featured your work on Blue Waters.
 
+\subsection{Products}
+
+\begin{itemize}
+	\item Lindsay, A., Huff, K., Rykhlevskii, A., 2017. arfc/moltres:
+Initial Moltres release. Zotero. doi:\url{dx.doi.org/10.5281/zenodo.801823}.
+        \item Lindsay, A., Ridley, G., Huff, K., 2017. Introduction to Moltres: an Application for Simulation of Molten Salt Reactors. (submitted). \url{https://github.com/arfc/publications/tree/2017-lindsay-moltres_init}.
+        \item Ridley, G., 2017. Multiphysics Analysis of Molten Salt Reactor Transients (Undergraduate Report No. UIUC-ARFC-2017-01), Advanced Reactors and Fuel Cycles Group Report Series. University of Illinois at Urbana-Champaign, Urbana, IL. \url{https://github.com/arfc/publications/tree/2017-ridley-msrTransients}.
+\end{itemize}
 
 \subsection{Highlighted Keynotes} I gave two keynote talks 
 this year. One was to PyCon 2017, with an audience of over 3000 people. The 
@@ -209,28 +218,40 @@ Video: \url{https://www.youtube.com/watch?v=kaGS4YXwciQ}.
 Moltres appeared in detail within three presentations during the course of the 
 allocation. 
 
-\begin{itemize}
-\item Alexander Lindsay and Kathryn Huff, ``Moltres: a MOOSE Application for
-Simulation of MSRs.'' Workshop on Multi-physics Modeling and Simulation of
-Molten Salt Reactors, Berkeley, CA.June 15, 2017. Presentation:
-\url{arfc.npre.illinois.edu/img/pres/2017-06-15-msr-pres.pdf}.
-\item Kathryn Huff, ``Modeling and Simulation of Advanced Reactors and Fuel
-Cycles,'' Invited Seminar, UC Davis Mechanical and Aerospace Engineering
-Seminar, Davis, CA. April 20, 2017. Presentation:
-\url{http://katyhuff.github.io/2017-04-20-davis}. Video:
-\url{https://www.youtube.com/watch?v=YqTxZC1i-B0#t=6m28s}
-\item Kathryn Huff, ``Advanced Nuclear Reactors and Fuel Cycles: Simulation of 
-        Multiple Physics at Disparate Scales'' Computational Science and 
-                Engineering Seminar Series, 1030 National Center for 
-                Supercomputing Applications, Urbana, IL Presentation: 
+\begin{itemize} 
+        \item Alexander Lindsay and Kathryn Huff, ``Moltres: a MOOSE 
+                Application for Simulation of MSRs.'' Workshop on Multi-physics 
+                Modeling and Simulation of Molten Salt Reactors, Berkeley, 
+                CA.June 15, 2017. Presentation: 
+        \url{arfc.npre.illinois.edu/img/pres/2017-06-15-msr-pres.pdf}. 
+        \item Kathryn Huff, ``Modeling and Simulation of Advanced Reactors and 
+                Fuel Cycles,'' Invited Seminar, UC Davis Mechanical and 
+                Aerospace Engineering Seminar, Davis, CA. April 20, 2017. 
+                Presentation: \url{http://katyhuff.github.io/2017-04-20-davis}. 
+                Video: 
+                \url{https://www.youtube.com/watch?v=YqTxZC1i-B0#t=6m28s}
+        \item Kathryn Huff, ``Advanced Nuclear Reactors and Fuel Cycles: 
+                Simulation of Multiple Physics at Disparate Scales'' 
+                Computational Science and Engineering Seminar Series, 1030 
+                National Center for Supercomputing Applications, Urbana, IL. 
+                February 2, 2017. Presentation: 
                 \url{http://katyhuff.github.io/2017-02-02-cse}.  Video: 
                 \url{https://www.youtube.com/watch?v=fWlUW_CFo3M}.
+        \item Gavin Ridley. ``Transient Simulations of Next Generation Nuclear 
+                Reactors.'' Illinois Summer Research Symposium, Session: 
+                Improving Big Data Algorithms for Food and Energy Security, 
+                Urbana, IL. July 21, 2017 (Awarded Honorable Mention for 
+                Outstanding Oral Presentation). \url{http://www.grad.illinois.edu/sites/default/files/PDFs/ISRS-program-booklet-2017.pdf}
 \end{itemize}
+
 \section{Plan for next year}
 
-The development of this software  began in September 2016 and has now been
-demonstrated on hundreds of nodes on blue waters. We will scale it up to much
-larger problems very soon.
+The development of the Moltres software  began in September 2016 and has now been
+demonstrated on hundreds of nodes on Blue Waters. We will scale it up to much
+larger problems this year. In particular, we will emphasize transient 
+accident scenarios in the Molten Salt Reactor Experiment design (which will 
+require simulations over many hundreds of timesteps) as well as a much 
+(spatially) larger reactor, the Molten Salt Breeder Reactor design. 
 
 \begin{figure}[htbp!]
 \begin{center}
@@ -240,13 +261,15 @@ larger problems very soon.
 \label{fig:proj}
 \end{figure}
 
-The following 
+The following updates will result in a step change for our research 
+productivity this year. 
 
 \begin{itemize}
-        \item \textbf{Larger Scale Problems} The software we developed in house (moltres) is now capable of 3D 
-        simulation. Its performance is currently memory constrained. 
-               Distributed Mesh memory handling will be implemented in the near 
-                term in order to overcome this barrier. 
+        \item \textbf{Larger Scale Problems} The software we developed in house 
+                (moltres) is now capable of 3D simulation. Its performance is 
+                currently memory constrained.  Distributed Mesh memory handling 
+                will be implemented in the near term in order to overcome this 
+                barrier. 
         \item \textbf{Monte-Carlo Cross-Section Generation} The ARFC group intends to begin working with monte-carlo software for 
         cross section generation. Ideally, we would like to run Serpent 2 or 
                 OpenMC. The Serpent 2 software is fully parallelizable, very 
@@ -255,23 +278,27 @@ The following
                 results will improve enormously, as will the computational 
                 intensity of our work.
 \item \textbf{Quadrupling Group Size} The number of graduate students in the Advanced Reactors and Fuel Cycles
-        \item \textbf{Expansion into Agent Based Modeling} The scope of the work within ARFC will be expanded to include some capacity
-computing work. While this is not the bulk of ARFC work, we have a project in
-statistical optimization methods for agent based modeling which could benefit
-from a few hundreds or thousands of independent single-node runs. 
-group will quadruple this year, from 2 to 8. 
+        \item \textbf{Expansion into Agent Based Modeling} The scope of the 
+                work within ARFC will be expanded to include some capacity 
+                computing work. While this is not the bulk of ARFC work, we 
+                have a project in statistical optimization methods for agent 
+                based modeling (the Cyclus application 
+                \cite{huff_fundamental_2016}) which could benefit 
+                from a few hundreds or thousands of independent single-node 
+                runs.  group will quadruple this year, from 2 to 8. 
 \end{itemize}
 
-\paragraph{System nodes needed per run:} 20 - 2,000. Many simulations will be 
-run on 100-200 nodes, while a few much larger simulations will be run on 2,000 
+\paragraph{System nodes needed per run:} 20 - 5,000. Many simulations will be 
+run on 100-200 nodes, while a few much larger simulations will be run on 5,000 
 nodes. While it is possible, it is unlikely that we will run larger runs 
 this year.
-\paragraph{Anticipated memory usage:}
-\paragraph{Expected numerical operations}
-\paragraph{Expected local and remote memory accesses}
-\paragraph{Total Node Hours}
-\paragraph{Anticipated input and output requirements}
-\paragraph{Anticipated data transfer}
+\paragraph{Anticipated memory usage:} Unknown.
+\paragraph{Expected numerical operations:} Unknown.
+\paragraph{Expected local and remote memory accesses:} Unknown. 
+\paragraph{Total Node Hours:} Approximately 30,000 node hours.
+\paragraph{Anticipated data transfer:} Data transfer will be in the ``few 
+gigabytes'' per run for most runs. Large runs may be in the ``tens of 
+gigabytes.''
 
 %Describe the Blue Waters resources required for next year. This description 
 %should include the number of system nodes needed for your runs, the 
