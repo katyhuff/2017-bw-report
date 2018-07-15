@@ -11,6 +11,8 @@
 \usepackage{amsfonts}
 \usepackage{amsmath}
 \usepackage{placeins}
+\usepackage{caption}
+\usepackage{subcaption}
 \usepackage[hyphens]{url}
 \usepackage[hidelinks]{hyperref}
 
@@ -29,15 +31,16 @@ Advanced Reactors and Fuel Cycles}
 \paragraph{Project title:} Advanced Reactors and Fuel Cycles
 
 \paragraph{Principal Investigator:} Kathryn Huff, Blue Waters Assistant Professor, Department of Nuclear, Plasma and Radiological Engineering, NCSA Affiliate Faculty, University of Illinois at Urbana-Champaign (kdhuff@illinois.edu)
+
 \paragraph{Co-PIs and Collaborators:} Postdoctoral Scholar Alexander Lindsay was a key part of my research group in 2016-2017:
 Alexander Lindsay, Postdoctoral Scholar, Nuclear Plasma and Radiological Engineering, University of Illinois at Urbana-Champaign
 
 \section{Executive Summary}
 %Executive summary (150 words)
-The Advanced Reactors and Fuel Cycles Group (ARFC) conducts modeling and
-simulation in the context of nuclear reactors and fuel cycles toward improved
-safety and sustainability of nuclear power. In the context of high performance
-computing, this work requires the coupling of multiple physics at multiple
+The Advanced Reactors and Fuel Cycles Group (ARFC) conducts modeling and 
+simulation in the context of nuclear reactors and fuel cycles toward improved 
+safety and sustainability of nuclear power.  This work requires high 
+performance computing capabilities to couple multiple physics at multiple
 scales to model and simulate the design, safety, and performance of advanced
 nuclear reactors. In particular, thermal-hydraulic phenomena, neutron
 transport, and fuel performance couple tightly in nuclear reactors. Detailed
@@ -48,14 +51,26 @@ those unique physics. In the work presented here, ARFC has demonstrated the
 capability to simulate coupled, transient neutronics and thermal hydraulics in
 an advanced, molten-salt-fueled nuclear reactor. 
 
+\textbf{Highlight: The coupled multiphysics capabilities in two computational tools 
+        developed for and demonstrated on Blue Waters helped Prof. Huff to secure 
+significant (\$999,694) grant funding this year.} The award, ``Enabling Load 
+Following Capability in the Transatomic Power MSR'' is part of ARPA-E's 
+Modeling-Enhanced Innovations Trailblazing Nuclear Energy Reinvigoration 
+(MEITNER) initiative. 
+
 \section{Description of research activities and results}
 
 ARFC Blue Waters activity began in November 2016 when access to the ARFC 
-allocation was initiated for PI Huff. In the ten months since the start of 
-this allocation, Blue Waters has enabled ARFC to develop and test a 
-first-of-its-kind finite element model of the transient neutronics and thermal 
-hydraulics in a liquid-fueled molten salt reactor design 
-\cite{lindsay_arfc/moltres:_2017}. 
+allocation was initiated for PI Huff. In the two years since the start of 
+this allocation, Blue Waters has enabled ARFC to develop and test two 
+significant new capabilities. First, Moltres is a first-of-its-kind finite 
+element model of the transient neutronics and thermal hydraulics in a 
+liquid-fueled molten salt reactor design 
+\cite{lindsay_introduction_2018,lindsay_moltres:_2018,ridley_introduction_2017,ridley_multiphysics_2017}.
+Second, SaltProc is a highly capable tool for fuel salt reprocessing 
+simulation 
+\cite{rykhlevskii_full-core_2017,rykhlevskii_arfc/saltproc:_2018,rykhlevskii_advanced_2018}.
+
 
 \subsection{Key Challenges}
 The current state of the art in advanced nuclear reactor simulation (e.g. the
@@ -84,7 +99,7 @@ As we together face energy poverty, climate change, and simultaneous increase
 in worldwide energy use, the world's energy future increasingly depends on
 improved safety and sustainability of nuclear reactor designs and fuel cycle
 strategies. Advanced reactor and fuel cycle systems are sufficiently complex
-that sophisticated scientific software so high-performance computing resources
+that sophisticated scientific software and high-performance computing resources
 are essential to understanding and improving them.
 
 In particular, insights coupling feedback between the reactor scale and the
@@ -96,7 +111,6 @@ modeling and simulation. Additionally, development and demonstration
 of high fidelity software for multi-physics in advanced reactor types builds a
 foundation for future funding through the Department of Energy Office of
 Nuclear Energy. 
-
 
 \subsection{Why Blue Waters} To assess nuclear reactor performance under a
 variety of conditions and dynamic transients, the ARFC group must conduct
@@ -142,29 +156,31 @@ regions.
         \begin{center}
                 \includegraphics[width=0.5\textwidth]{flux.eps}
         \end{center}
-        \caption{This image shows the neutron flux in a 2-D cylindrical axisymmetric model of an MSR. This flux has the anticipated magnitude and canonical cosine shape (r = 0 is center of core) and is undergoing validation against experimental results from the Molten Salt Reactor Experiment.}
+        \caption{This image shows the neutron flux in a 2-D cylindrical 
+        axisymmetric model of an MSR. This flux has the anticipated magnitude 
+and canonical cosine shape (r = 0 is center of core) and is undergoing 
+validation against experimental results from the Molten Salt Reactor 
+Experiment.}%
         \label{fig:flux}
 \end{figure}
 
+
 In Figure \ref{fig:temp}, it can be seen that the temperature profile increases monotonically in
 the direction of salt flow. This is due to advection. 
-
-\begin{figure}[htb]
-        \begin{center}
-                \includegraphics[width=0.5\textwidth]{temp.eps}
-        \end{center}
-        \caption{This image shows the temperature in a 2-D cylindrical axisymmetric model of an MSR. The reactor core temperature peaks near the reactor outlet in this 2-D axisymmetric model because of fuel advection (r = 0 is center of core).} 
-        \label{fig:temp}
-\end{figure}
-
 The role of advection is also seen in precursor
 concentrations. Long lived precursors exhibit maximum concentrations at the
-core outlet, as seen in Figure \ref{fig:pre1}
+core outlet, as seen in Figure \ref{fig:pre1}.  As the decay constant increases 
+across precursor groups the maximum concentrations moves towards the reactor 
+center where the precursor production rate is maximum. Future Moltres work 
+includes generating a high-fidelity 3D model as well as investigating various 
+transient accident scenarios.  
+
 
 
 \begin{figure}[htb]
+        \begin{subfigure}{0.4\textwidth}
         \begin{center}
-                \includegraphics[width=0.5\textwidth]{pre1.eps}
+                \includegraphics[width=\textwidth]{pre1.eps}
         \end{center}
         \caption{This image shows the concentration of some particularly 
         important fission-product nuclides called delayed neutron precursors.  
@@ -172,12 +188,63 @@ core outlet, as seen in Figure \ref{fig:pre1}
         1.24\times{10}^{-2}{s}^{-1}$) peaks near the reactor outlet in this 2-D 
         axisymmetric model (r = 0 is center of core).} 
         \label{fig:pre1}
+        \end{subfigure}\hfill%
+        \begin{subfigure}{0.4\textwidth}
+        \begin{center}
+                \includegraphics[width=\textwidth]{temp.eps}
+        \end{center}
+        \caption{This image shows the temperature in a 2-D cylindrical 
+        axisymmetric model of an MSR. The reactor core temperature peaks near 
+the reactor outlet in this 2-D axisymmetric model because of fuel advection (r 
+= 0 is center of core).}% 
+        \label{fig:temp}
+        \end{subfigure}%
 \end{figure}
 
-As the decay constant increases across precursor groups the maximum
-concentrations moves towards the reactor center where the precursor production
-rate is maximum. Future Moltres work includes generating a high-fidelity 3D
-model as well as investigating various transient accident scenarios.
+
+Additionally, we have developed
+an online reprocessing model, SaltProc which includes fission product removal, fissile material
+separations, and refuelling for time dependent analysis of fuel-salt evolution.
+This tool relies on full-core high-fidelity Monte Carlo simulations perform depletion
+computations. Simulations which faithfully capture this coupling at realistic spatial and
+temporal resolution are only possible with the aid of high performance
+computing resources.
+
+These fuel cycle simulations have occupied up to many hundreds of nodes
+simultaneously and have resulted in rich datasets for use in reactor design and
+analysis.  Fuel cycle dynamics and quasi-equilibrium compositions were obtained
+from depletion and reprocessing simulations for a 10-year time frame. The MSBR
+full-core safety analysis was performed at the initial and equilibrium fuel
+salt compositions, for various reactor safety parameters such as effective
+multiplication factor, neutron flux distributions, temperature coefficients,
+rod worths, power and breeding distributions.
+
+\begin{figure}[ht]
+        \begin{center}
+                \includegraphics[width=0.5\textwidth]{plan_view_ser.png}
+        \end{center}
+        \caption{High fidelity monte carlo neutron transport solutions in the
+                Molten Salt Breeder Reactor are at the heart of fuel cycle
+        analysis on Blue Waters. Above, yellow represents the fuel salt, purple 
+represents the graphite moderator, and blue is the outer vessel.}
+        \label{fig:plan_view}
+\end{figure}
+
+\begin{figure}[ht]
+   \begin{subfigure}{.5\textwidth}
+   \includegraphics[width=\textwidth]{./power_distribution.png}
+        \label{fig:power_dens}
+   \caption{Normalized power density}
+   \end{subfigure}
+   \begin{subfigure}{.5\textwidth}
+          \includegraphics[width=\textwidth]{./breeding_distribution.png}
+   \caption{$^{232}$Th neutron capture reaction rate normalized by total flux}
+        \label{fig:breed_dens}
+   \end{subfigure}
+    \end{figure}
+
+
+
 \FloatBarrier
 
 \section{List of publications associated with this work}
@@ -189,17 +256,22 @@ model as well as investigating various transient accident scenarios.
 
 %Highlight any keynote or other presentations that featured your work on Blue Waters.
 
-\subsection{Products}
+\subsection{Publications and Products}
 
 \begin{itemize}
-	\item Lindsay, A., Huff, K., Rykhlevskii, A., 2017. arfc/moltres:
-Initial Moltres release. Zotero. doi:\url{dx.doi.org/10.5281/zenodo.801823}.
-        \item Lindsay, A., Ridley, G., Huff, K., 2017. Introduction to Moltres: an Application for Simulation of Molten Salt Reactors. (submitted). \url{https://github.com/arfc/publications/tree/2017-lindsay-moltres_init}.
+        \item A. Lindsay, G. Ridley, A. Rykhlevskii, and K. Huff, ``Introduction to Moltres: An application for simulation of Molten Salt Reactors,'' Annals of Nuclear Energy, vol. 114, pp. 530–540, Apr. 2018.
+        \item A. Rykhlevskii, ``Advanced online fuel reprocessing simulation for Thorium-fuled Molten Salt Breeder Reactor,'' Master’s thesis, University of Illinois at Urbana-Champaign, Apr. 2018.
+        \item A. Rykhlevskii, J. W. Bae, and K. Huff, ``arfc/saltproc: Code for online reprocessing simulation of molten salt reactor with external depletion solver SERPENT,'' Zenodo, Mar. 2018.
+        \item A. Lindsay and K. Huff, ``Moltres: finite element based simulation of molten salt reactors,'' The Journal of Open Source Software, vol. 3, pp. 1–2, Jan. 2018.
         \item Ridley, G., 2017. Multiphysics Analysis of Molten Salt Reactor Transients (Undergraduate Report No. UIUC-ARFC-2017-01), Advanced Reactors and Fuel Cycles Group Report Series. University of Illinois at Urbana-Champaign, Urbana, IL. \url{https://github.com/arfc/publications/tree/2017-ridley-msrTransients}.
+        \item A. Rykhlevskii, A. Lindsay, and K. D. Huff, ``Full-core analysis of thorium-fueled Molten Salt Breeder Reactor using the SERPENT 2 Monte Carlo code,'' in Transactions of the American Nuclear Society, (Washington, DC, United States), American Nuclear Society, Nov. 2017.
+        \item G. Ridley, A. Lindsay, and K. Huff, ``An Introduction to Moltres, an MSR Multiphysics Code,'' in Transactions of the American Nuclear Society, (Washington D.C.), American Nuclear Society, Oct. 2017.
+        \item G. Ridley, A. Lindsay, M. Turk, and K. Huff, ``Multiphysics Analysis of Molten Salt Reactor Transients,'' Undergraduate Report UIUC-ARFC-2017-01, University of Illinois at Urbana-Champaign, Urbana, IL, Aug. 2017. DOI 10.5281/zenodo.1145437.
+	\item Lindsay, A., Huff, K., Rykhlevskii, A., 2017. arfc/moltres: Initial Moltres release. Zotero. doi:\url{dx.doi.org/10.5281/zenodo.801823}.
 \end{itemize}
 
-\subsection{Highlighted Keynotes} I gave two keynote talks 
-this year. One was to PyCon 2017, with an audience of over 3000 people. The 
+\subsection{Highlighted Keynotes}
+PI Huff gave two keynote talks in 2017. One was to PyCon 2017, with an audience of over 3000 people. The 
 second was at SciPy 2017, with an audience of 700 people. Each keynote 
 mentioned my affiliation with NCSA, my position as a Blue Waters Professor, and 
 the work being conducted on Blue Waters in my group. 
@@ -219,6 +291,15 @@ Moltres appeared in detail within three presentations during the course of the
 allocation. 
 
 \begin{itemize} 
+        \item Andrei Rykhlevskii, ``Computational Tools for Molten Salt Reactor 
+                Simulation,'' presented at the Blue Waters Symposium, Sun 
+                River, OR. June 4, 2018. Presentation: 
+                \url{http://arfc.github.io/pres/2018-04-07-comp-tools-msr.pdf}
+        \item Kathryn D. Huff, ``Modeling and Simulation at Disparate Scales: 
+                Molten Salt Reactor Physics and International Fuel Cycle 
+                Transitions,'' presented at the NERS Colloquium, Ann Arbor, MI. 
+                February 16, 2018. Presentation: 
+                \url{https://katyhuff.github.io/2018-02-16-ners}
         \item Alexander Lindsay and Kathryn Huff, ``Moltres: a MOOSE 
                 Application for Simulation of MSRs.'' Workshop on Multi-physics 
                 Modeling and Simulation of Molten Salt Reactors, Berkeley, 
@@ -247,45 +328,46 @@ allocation.
 \section{Plan for next year}
 
 The development of the Moltres software  began in September 2016 and has now been
-demonstrated on hundreds of nodes on Blue Waters. We will scale it up to much
-larger problems this year. In particular, we will emphasize transient 
-accident scenarios in the Molten Salt Reactor Experiment design (which will 
-require simulations over many hundreds of timesteps) as well as a much 
-(spatially) larger reactor, the Molten Salt Breeder Reactor design. 
+demonstrated on hundreds of nodes on Blue Waters. We haved scaled that up to
+include very (spatially) large reactor core simulations of the Molten Salt 
+Breeder Reactor design and the Transatomic Power reactor. This year we will 
+continue to emphasize transient accident scenarios (Moltres) and fuel salt 
+reprocessing analysis (SaltProc) in both of these reactor designs.
 
 \begin{figure}[htbp!]
 \begin{center}
         \includegraphics[width=\textwidth]{proj.png}
 \end{center}
-\caption{Planned project schedule for molten salt reactor related activities in 2017-2018.}
+\caption{Planned project schedule for molten salt reactor related activities in 
+2018-2019.}
 \label{fig:proj}
 \end{figure}
 
-The following updates will result in a step change for our research 
+The following updates will continue to support our research 
 productivity this year. 
 
 \begin{itemize}
         \item \textbf{Larger Scale Problems} The software we developed in house 
-                (moltres) is now capable of 3D simulation. Its performance is 
-                currently memory constrained.  Distributed Mesh memory handling 
-                will be implemented in the near term in order to overcome this 
-                barrier. 
-        \item \textbf{Monte-Carlo Cross-Section Generation} The ARFC group intends to begin working with monte-carlo software for 
-        cross section generation. Ideally, we would like to run Serpent 2 or 
-                OpenMC. The Serpent 2 software is fully parallelizable, very 
-                memory intensive, and will produce very high fidelity results. 
-                If we are able to use it on Blue Waters, the quality of our 
-                results will improve enormously, as will the computational 
-                intensity of our work.
-\item \textbf{Quadrupling Group Size} The number of graduate students in the Advanced Reactors and Fuel Cycles
+                (moltres) is now capable of 3D simulation and can be used by 
+                many students. Accordingly, we expect this portion of our 
+                activity to be strong this year.
+        \item \textbf{Monte-Carlo Cross-Section Generation} The ARFC group 
+                began working with monte-carlo software for cross section 
+                generation last year. The Serpent 2 software is fully parallelizable, very 
+                memory intensive, and produces very high fidelity results. 
+                We will continue this activity in 2018-2019 and the computational 
+                intensity of our work will remain stable.
+\item \textbf{Group Size} The number of graduate students in the Advanced Reactors and Fuel Cycles
+                group rose to 7 in 2017 and will remain approximately this size 
+                through 2019..
         \item \textbf{Expansion into Agent Based Modeling} The scope of the 
-                work within ARFC will be expanded to include some capacity 
+                work within ARFC will continue to include some capacity 
                 computing work. While this is not the bulk of ARFC work, we 
                 have a project in statistical optimization methods for agent 
                 based modeling (the Cyclus application 
-                \cite{huff_fundamental_2016}) which could benefit 
+                \cite{huff_fundamental_2016}) that benefits
                 from a few hundreds or thousands of independent single-node 
-                runs.  group will quadruple this year, from 2 to 8. 
+                runs.  
 \end{itemize}
 
 \paragraph{System nodes needed per run:} 20 - 5,000. Many simulations will be 
@@ -295,7 +377,7 @@ this year.
 \paragraph{Anticipated memory usage:} Unknown.
 \paragraph{Expected numerical operations:} Unknown.
 \paragraph{Expected local and remote memory accesses:} Unknown. 
-\paragraph{Total Node Hours:} Approximately 30,000 node hours.
+\paragraph{Total Node Hours:} Approximately 100,000 node hours.
 \paragraph{Anticipated data transfer:} Data transfer will be in the ``few 
 gigabytes'' per run for most runs. Large runs may be in the ``tens of 
 gigabytes.''
@@ -316,6 +398,7 @@ gigabytes.''
 %https://bluewaters.ncsa.illinois.edu/storage. If your project will require 
 %storage limits that exceed the standard quotas, provide a justification in 
 %support of your request.
+
 
 \subsection{Usage Schedule:} See Figure \ref{fig:proj}.
 %Provide an estimated Blue Waters usage schedule. The estimate should be per 
