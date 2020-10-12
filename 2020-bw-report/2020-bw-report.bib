@@ -1,0 +1,816 @@
+
+@inproceedings{rykhlevskii_online_2017,
+	address = {Washington, DC, United States},
+	title = {Online reprocessing simulation for thorium-fueled molten salt breeder reactor},
+	abstract = {The current paper presents a single-cell model developed using the continuous-energy Serpent 2 Monte Carlo reactor physics software. It was employed to establish a Serpent- based method for finding the equilibrium core composition and core depletion of the Molten Salt Breeder Reactor (MSBR).},
+	booktitle = {Transactions of the {American} {Nuclear} {Society}},
+	publisher = {American Nuclear Society},
+	author = {Rykhlevskii, Andrei and Lindsay, Alexander and Huff, Kathryn D.},
+	month = nov,
+	year = {2017},
+	file = {msbr_reproc.pdf:/Users/khuff/Zotero/storage/PASSAITQ/msbr_reproc.pdf:application/pdf}
+}
+
+@article{huff_fundamental_2016,
+	title = {Fundamental concepts in the {Cyclus} nuclear fuel cycle simulation framework},
+	volume = {94},
+	issn = {0965-9978},
+	url = {http://www.sciencedirect.com/science/article/pii/S0965997816300229},
+	doi = {10.1016/j.advengsoft.2016.01.014},
+	abstract = {As nuclear power expands, technical, economic, political, and environmental analyses of nuclear fuel cycles by simulators increase in importance. To date, however, current tools are often fleet-based rather than discrete and restrictively licensed rather than open source. Each of these choices presents a challenge to modeling fidelity, generality, efficiency, robustness, and scientific transparency. The Cyclus nuclear fuel cycle simulator framework and its modeling ecosystem incorporate modern insights from simulation science and software architecture to solve these problems so that challenges in nuclear fuel cycle analysis can be better addressed. A summary of the Cyclus fuel cycle simulator framework and its modeling ecosystem are presented. Additionally, the implementation of each is discussed in the context of motivating challenges in nuclear fuel cycle simulation. Finally, the current capabilities of Cyclus are demonstrated for both open and closed fuel cycles.},
+	language = {en},
+	urldate = {2016-02-12},
+	journal = {Advances in Engineering Software},
+	author = {Huff, Kathryn D. and Gidden, Matthew J. and Carlsen, Robert W. and Flanagan, Robert R. and McGarry, Meghan B. and Opotowsky, Arrielle C. and Schneider, Erich A. and Scopatz, Anthony M. and Wilson, Paul P. H.},
+	month = apr,
+	year = {2016},
+	note = {arXiv: 1509.03604},
+	keywords = {agent based modeling, Agent based modeling, and Science, Computer Science - Computational Engineering, Computer Science - Computational Engineering, Finance, and Science, Computer Science - Mathematical Software, Computer Science - Multiagent Systems, Computer Science - Software Engineering, D.2.13, D.2.4, Finance, I.6.7, I.6.8, nuclear engineering, Nuclear engineering, Nuclear fuel cycle, Object orientation, simulation, Simulation, Systems analysis},
+	pages = {46--59},
+	file = {arXiv\:1509.03604 PDF:/Users/khuff/Zotero/storage/4FI3T63Q/Huff et al. - 2015 - Fundamental Concepts in the Cyclus Fuel Cycle Simu.pdf:application/pdf;arXiv\:1509.03604 PDF:/Users/khuff/Zotero/storage/F9KVM9DZ/Huff et al. - 2015 - Fundamental Concepts in the Cyclus Fuel Cycle Simu.pdf:application/pdf;arXiv\:1509.03604 PDF:/Users/khuff/Zotero/storage/GN7WIP38/Huff et al. - 2016 - Fundamental concepts in the Cyclus nuclear fuel cy.pdf:application/pdf;arXiv.org Snapshot:/Users/khuff/Zotero/storage/WQVTXAN2/1509.html:text/html;arXiv.org Snapshot:/Users/khuff/Zotero/storage/HXSDS7VW/1509.html:text/html;arXiv.org Snapshot:/Users/khuff/Zotero/storage/EVFA3LC6/1509.html:text/html;Fulltext:/Users/khuff/Zotero/storage/3IMCACE5/Huff et al. - 2016 - Fundamental concepts in the Cyclus nuclear fuel cy.pdf:application/pdf;fundamentals.pdf:/Users/khuff/Zotero/storage/BRJECDWC/fundamentals.pdf:application/pdf;fundamentals.pdf:/Users/khuff/Zotero/storage/C6G4NQJH/fundamentals.pdf:application/pdf;Huff et al. - 2016 - Fundamental concepts in the Cyclus nuclear fuel cy.pdf:/Users/khuff/Zotero/storage/FAM6DNLV/Huff et al. - 2016 - Fundamental concepts in the Cyclus nuclear fuel cy.pdf:application/pdf;ScienceDirect Full Text PDF:/Users/khuff/Zotero/storage/E7DK64AA/Huff et al. - 2016 - Fundamental concepts in the Cyclus nuclear fuel cy.pdf:application/pdf;ScienceDirect Snapshot:/Users/khuff/Zotero/storage/63CHUQ54/login.html:text/html;ScienceDirect Snapshot:/Users/khuff/Zotero/storage/EVBNKXMA/S0965997816300229.html:text/html;ScienceDirect Snapshot:/Users/khuff/Zotero/storage/JCCZAZB3/S0965997816300229.html:text/html;ScienceDirect Snapshot:/Users/khuff/Zotero/storage/275X4LV5/S0965997816300229.html:text/html;Snapshot:/Users/khuff/Zotero/storage/9DRDIPZV/S0965997816300229.html:text/html}
+}
+
+@article{gaston_parallel_2009,
+	title = {Parallel multiphysics algorithms and software for computational nuclear engineering},
+	volume = {180},
+	issn = {1742-6596},
+	url = {http://iopscience.iop.org/1742-6596/180/1/012012},
+	doi = {10.1088/1742-6596/180/1/012012},
+	abstract = {There is a growing trend in nuclear reactor simulation to consider multiphysics problems. This can be seen in reactor analysis where analysts are interested in coupled flow, heat transfer and neutronics, and in fuel performance simulation where analysts are interested in thermomechanics with contact coupled to species transport and chemistry. These more ambitious simulations usually motivate some level of parallel computing. Many of the coupling efforts to date utilize simple code coupling or first-order operator splitting, often referred to as loose coupling. While these approaches can produce answers, they usually leave questions of accuracy and stability unanswered. Additionally, the different physics often reside on separate grids which are coupled via simple interpolation, again leaving open questions of stability and accuracy. Utilizing state of the art mathematics and software development techniques we are deploying next generation tools for nuclear engineering applications. The Jacobian-free Newton-Krylov (JFNK) method combined with physics-based preconditioning provide the underlying mathematical structure for our tools. JFNK is understood to be a modern multiphysics algorithm, but we are also utilizing its unique properties as a scale bridging algorithm. To facilitate rapid development of multiphysics applications we have developed the Multiphysics Object-Oriented Simulation Environment (MOOSE). Examples from two MOOSE-based applications: PRONGHORN, our multiphysics gas cooled reactor simulation tool and BISON, our multiphysics, multiscale fuel performance simulation tool will be presented.},
+	language = {en},
+	number = {1},
+	urldate = {2013-10-04},
+	journal = {Journal of Physics: Conference Series},
+	author = {Gaston, D. and Hansen, G. and Kadioglu, S. and Knoll, D. A. and Newman, C. and Park, H. and Permann, C. and Taitano, W.},
+	month = jul,
+	year = {2009},
+	keywords = {atws, moose, pronghorn, unread},
+	pages = {012012},
+	file = {Full Text PDF:/Users/khuff/Zotero/storage/TBUI4PA3/Gaston et al. - 2009 - Parallel multiphysics algorithms and software for .pdf:application/pdf;Full Text PDF:/Users/khuff/Zotero/storage/2VBCDGX8/Gaston et al. - 2009 - Parallel multiphysics algorithms and software for .pdf:application/pdf;Snapshot:/Users/khuff/Zotero/storage/UGS48894/012012.html:text/html;Snapshot:/Users/khuff/Zotero/storage/E865K78C/login.html:text/html;Snapshot:/Users/khuff/Zotero/storage/SUD4MZVP/012012.html:text/html;Snapshot:/Users/khuff/Zotero/storage/AB95K24U/login.html:text/html}
+}
+
+@article{gaston_moose:_2009,
+	title = {{MOOSE}: {A} parallel computational framework for coupled systems of nonlinear equations},
+	volume = {239},
+	issn = {0029-5493},
+	shorttitle = {{MOOSE}},
+	url = {http://www.sciencedirect.com/science/article/pii/S0029549309002635},
+	doi = {10.1016/j.nucengdes.2009.05.021},
+	abstract = {Systems of coupled, nonlinear partial differential equations (PDEs) often arise in simulation of nuclear processes. MOOSE: Multiphysics Object Oriented Simulation Environment, a parallel computational framework targeted at the solution of such systems, is presented. As opposed to traditional data-flow oriented computational frameworks, MOOSE is instead founded on the mathematical principle of Jacobian-free Newton{\textendash}Krylov (JFNK). Utilizing the mathematical structure present in JFNK, physics expressions are modularized into {\textquotedblleft}Kernels,{\textquotedblright} allowing for rapid production of new simulation tools. In addition, systems are solved implicitly and fully coupled, employing physics-based preconditioning, which provides great flexibility even with large variance in time scales. A summary of the mathematics, an overview of the structure of MOOSE, and several representative solutions from applications built on the framework are presented.},
+	number = {10},
+	urldate = {2013-10-04},
+	journal = {Nuclear Engineering and Design},
+	author = {Gaston, Derek and Newman, Chris and Hansen, Glen and Lebrun-Grandie, Damien},
+	month = oct,
+	year = {2009},
+	keywords = {atws, moose, read, unread},
+	pages = {1768--1778},
+	file = {ScienceDirect Full Text PDF:/Users/khuff/Zotero/storage/U6D2P78I/Gaston et al. - 2009 - MOOSE A parallel computational framework for coup.pdf:application/pdf;ScienceDirect Full Text PDF:/Users/khuff/Zotero/storage/URRRCSA7/Gaston et al. - 2009 - MOOSE A parallel computational framework for coup.pdf:application/pdf;ScienceDirect Snapshot:/Users/khuff/Zotero/storage/UP5IGWBS/S0029549309002635.html:text/html;ScienceDirect Snapshot:/Users/khuff/Zotero/storage/A8X3Z2BF/S0029549309002635.html:text/html}
+}
+
+@article{kirk_libmesh:_2006,
+	title = {{libMesh}: a {C}++ library for parallel adaptive mesh refinement/coarsening simulations},
+	volume = {22},
+	issn = {0177-0667, 1435-5663},
+	shorttitle = {{libMesh}},
+	url = {https://link.springer.com/article/10.1007/s00366-006-0049-3},
+	doi = {10.1007/s00366-006-0049-3},
+	abstract = {In this paper we describe the libMesh (http://libmesh.sourceforge.net) framework for parallel adaptive finite element applications. libMesh is an open-source software library that has been developed to facilitate serial and parallel simulation of multiscale, multiphysics applications using adaptive mesh refinement and coarsening strategies. The main software development is being carried out in the CFDLab (http://cfdlab.ae.utexas.edu) at the University of Texas, but as with other open-source software projects; contributions are being made elsewhere in the US and abroad. The main goals of this article are: (1) to provide a basic reference source that describes libMesh and the underlying philosophy and software design approach; (2) to give sufficient detail and references on the adaptive mesh refinement and coarsening (AMR/C) scheme for applications analysts and developers; and (3) to describe the parallel implementation and data structures with supporting discussion of domain decomposition, message passing, and details related to dynamic repartitioning for parallel AMR/C. Other aspects related to C++ programming paradigms, reusability for diverse applications, adaptive modeling, physics-independent error indicators, and similar concepts are briefly discussed. Finally, results from some applications using the library are presented and areas of future research are discussed.},
+	language = {en},
+	number = {3-4},
+	urldate = {2017-04-11},
+	journal = {Engineering with Computers},
+	author = {Kirk, Benjamin S. and Peterson, John W. and Stogner, Roy H. and Carey, Graham F.},
+	month = dec,
+	year = {2006},
+	pages = {237--254},
+	file = {Full Text PDF:/Users/khuff/Zotero/storage/2Z9B88E4/Kirk et al. - 2006 - libMesh a C++ library for parallel adaptive mesh .pdf:application/pdf;Snapshot:/Users/khuff/Zotero/storage/CJ6ZDS26/10.html:text/html}
+}
+
+@article{leppanen_serpent_2014,
+	series = {Joint {International} {Conference} on {Supercomputing} in {Nuclear} {Applications} and {Monte} {Carlo} 2013, {SNA} + {MC} 2013. {Pluri}- and {Trans}-disciplinarity, {Towards} {New} {Modeling} and {Numerical} {Simulation} {Paradigms}},
+	title = {The {Serpent} {Monte} {Carlo} code: {Status}, development and applications in 2013},
+	volume = {82},
+	issn = {0306-4549},
+	shorttitle = {The {Serpent} {Monte} {Carlo} code},
+	doi = {10.1016/j.anucene.2014.08.024},
+	abstract = {The Serpent Monte Carlo reactor physics burnup calculation code has been developed at VTT Technical Research Centre of Finland since 2004, and is currently used in over 100 universities and research organizations around the world. This paper presents the brief history of the project, together with the currently available methods and capabilities and plans for future work. Typical user applications are introduced in the form of a summary review on Serpent-related publications over the past few years.},
+	urldate = {2017-04-10},
+	journal = {Annals of Nuclear Energy},
+	author = {Leppanen, Jaakko and Pusa, Maria and Viitanen, Tuomas and Valtavirta, Ville and Kaltiaisenaho, Toni},
+	month = aug,
+	year = {2014},
+	keywords = {Burnup calculation, Homogenization, Monte Carlo, Reactor physics},
+	pages = {142--150},
+	file = {ScienceDirect Full Text PDF:/Users/khuff/Zotero/storage/83V2KXJ9/Lepp{\"a}nen et al. - 2015 - The Serpent Monte Carlo code Status, development .pdf:application/pdf;ScienceDirect Full Text PDF:/Users/khuff/Zotero/storage/VT4QRTXR/Lepp{\"a}nen et al. - 2015 - The Serpent Monte Carlo code Status, development .pdf:application/pdf;ScienceDirect Snapshot:/Users/khuff/Zotero/storage/AQAB5875/S0306454914004095.html:text/html;ScienceDirect Snapshot:/Users/khuff/Zotero/storage/9AVEULJX/S0306454914004095.html:text/html}
+}
+
+@techreport{satish_balay_petsc_2015,
+	title = {{PETSc} {Users} {Manual}},
+	url = {http://www.mcs.anl.gov/petsc},
+	number = {ANL-95/11 - Revision 3.6},
+	institution = {Argonne National Laboratory},
+	author = {{Satish Balay} and {Shrirang Abhyankar} and {Mark Adams} and {Jed Brown} and {Peter Brune} and {Kris Buschelman} and {Lisandro Dalcin} and {Victor Eijkhout} and {William Grop} and {Dinesh Kaushik} and {Matthew Knepley} and {Lois Curfman McInnes} and {Karl Rupp} and {Barry Smith} and {Stefano Zampini} and {Hong Zhang}},
+	year = {2015},
+	file = {PetScDocv3pt6.pdf:/Users/khuff/Zotero/storage/BKHJAPZA/PetScDocv3pt6.pdf:application/pdf}
+}
+
+@article{lindsay_arfc/moltres:_2017,
+	title = {arfc/moltres: {Initial} {Moltres} release},
+	shorttitle = {arfc/moltres},
+	url = {https://zenodo.org/record/801823#.WV0zchPyu34},
+	doi = {dx.doi.org/10.5281/zenodo.801823},
+	abstract = {Functionality included in the initial Moltres release is fully-coupled simulation of multi-group neutrons, temperature, and drifting precursors in 2D-axisymmetric models of Molten Salt Reactors. Kernels and boundary conditions are dimension agnostic and can be run for 1, 2, and 3 dimensions. However, computationally efficient simulation of 3D geometries has yet to be demonstrated.},
+	journal = {Zenodo},
+	author = {Lindsay, Alex and Huff, Kathryn and Rykhlevskii, Andrei},
+	month = jun,
+	year = {2017},
+	doi = {10.5281/zenodo.801823}
+}
+
+@techreport{ridley_multiphysics_2017,
+	address = {Urbana, IL},
+	type = {Undergraduate {Report}},
+	title = {Multiphysics {Analysis} of {Molten} {Salt} {Reactor} {Transients}},
+	url = {https://github.com/arfc/publications/tree/2017-ridley-msrTransients},
+	abstract = {Molten salt nuclear reactor technology has not yet been constructed for industrial scale. High fidelity simulation capability of both transients and steady-state behavior must be developed for reactor licensing. The simulations should make use of high performance computing (HPC) in order
+to come to realistic results while minimizing assumptions. High resolution simulation of limiting reactor transients using
+open-source software can inform reproducible results suitable for preliminary licensing activity. We present example results of the new code.},
+	number = {UIUC-ARFC-2017-01},
+	institution = {University of Illinois at Urbana-Champaign},
+	author = {Ridley, Gavin and Lindsay, Alexander and Turk, Matthew and Huff, Kathryn},
+	month = aug,
+	year = {2017},
+	note = {DOI 10.5281/zenodo.1145437},
+	keywords = {arfc, report},
+	pages = {0--12},
+	file = {uiuc-arfc-2017-01.pdf:/Users/khuff/Zotero/storage/ASUYNNXT/uiuc-arfc-2017-01.pdf:application/pdf}
+}
+
+@inproceedings{rykhlevskii_full-core_2017,
+	address = {Washington, DC, United States},
+	title = {Full-core analysis of thorium-fueled {Molten} {Salt} {Breeder} {Reactor} using the {SERPENT} 2 {Monte} {Carlo} code},
+	abstract = {We used the continuous-energy Serpent 2 Monte Carlo
+particle transport code to calulate whole-core depletion in the thermal spectrum Molten Salt Breeder Reactor
+(MSBR) . We then compare these results with existing MCNP6
+results with a more simplified geometric model. This
+neutronics model is of sufficient fidelity to inform optimization
+of fuel salt composition, fuel utilization, neutron fluxes, and
+spectrum evaluation. Moreover, this model will be employed
+for depeletion calculations, generation of problem-oriented
+homogenized nuclear data (multi-group cross sections and
+diffusion constants) for deterministic reactor codes, and multiphysics
+simulations.},
+	booktitle = {Transactions of the {American} {Nuclear} {Society}},
+	publisher = {American Nuclear Society},
+	author = {Rykhlevskii, Andrei and Lindsay, Alexander and Huff, Kathryn D.},
+	month = nov,
+	year = {2017},
+	file = {full-core_msbr_model.pdf:/Users/khuff/Zotero/storage/3F8DA752/full-core_msbr_model.pdf:application/pdf}
+}
+
+@techreport{lindsay_advanced_2016,
+	address = {Urbana, IL},
+	type = {Technical {Report}},
+	title = {Advanced {Reactor} {Fuel} {Cycles} {Molten} {Salt} {Reactor} {Design}},
+	url = {https://github.com/arfc/MSR-design},
+	institution = {University of Illinois at Urbana-Champaign},
+	author = {Lindsay, Alex and Rykhlevskii, Andrei and Huff, Kathryn},
+	month = aug,
+	year = {2016},
+	pages = {0--17},
+	file = {MSR-design.pdf:/Users/khuff/Zotero/storage/VHQVZRB2/MSR-design.pdf:application/pdf}
+}
+
+@article{lindsay_introduction_2018,
+	title = {Introduction to {Moltres}: {An} application for simulation of {Molten} {Salt} {Reactors}},
+	volume = {114},
+	issn = {0306-4549},
+	shorttitle = {Introduction to {Moltres}},
+	doi = {10.1016/j.anucene.2017.12.025},
+	abstract = {Moltres is a new physics application for modeling coupled physics in fluid-fuelled, molten salt reactors. This paper describes its neutronics model, thermal hydraulics model, and their coupling in the MOOSE framework. Neutron and precursor equations are implemented using an action system that allows use of an arbitrary number of groups with no change in the input card. Results for many-channel configurations in 2D-axisymmetric and 3D coordinates are presented and compared against other coupled models as well as the Molten Salt Reactor Experiment.},
+	urldate = {2018-01-08},
+	journal = {Annals of Nuclear Energy},
+	author = {Lindsay, Alexander and Ridley, Gavin and Rykhlevskii, Andrei and Huff, Kathryn},
+	month = apr,
+	year = {2018},
+	keywords = {agent based modeling, Finite elements, Hydrologic contaminant transport, MOOSE, Multiphysics, nuclear engineering, Nuclear fuel cycle, Object orientation, Parallel computing, Reactor physics, repository, Simulation, Systems analysis},
+	pages = {530--540},
+	file = {Moltres.pdf:/Users/khuff/Zotero/storage/4XDXRICB/Moltres.pdf:application/pdf;ScienceDirect Full Text PDF:/Users/khuff/Zotero/storage/E2T9U5IX/Lindsay et al. - 2018 - Introduction to Moltres An application for simula.pdf:application/pdf;ScienceDirect Snapshot:/Users/khuff/Zotero/storage/3DT9TEY3/S0306454917304760.html:text/html}
+}
+
+@article{lindsay_moltres:_2018,
+	title = {Moltres: finite element based simulation of molten salt reactors},
+	volume = {3},
+	shorttitle = {Moltres},
+	url = {https://doi.org/10.21105/joss.00298},
+	doi = {10.21105/joss.00298},
+	abstract = {Moltres is a physics application for multiphysics modeling of fluid-fueled molten salt reactors
+(MSRs) (Lindsay et al. 2018). It couples equations for neutron diffusion, thermal
+hydraulics, and delayed neutron precursor transport. Neutron diffusion and precursor
+transport equations are set-up using an action system that allows the user to use an arbitrary
+number of neutron energy and precursor groups respectively with minimal input
+changes. Moltres sits on top of the Multi-physics Object-Oriented Simulation Environment
+(Gaston et al. 2015) and hence uses the finite element method to discretize the
+governing partial differential equations. In general the resulting system of non-linear algebraic
+equations is linearized using the Newton-Raphson method and then solved using
+the Portable, Extensible Toolkit for Scientific Computation (Balay et al. 2017). Assembly
+of the Jacobian and residual, and the linear solve are parallelized using MPI which
+allows Moltres to be run in massively parallel environments. Runs on the Blue Waters
+supercomputer at Illinois have utilized up to 608 cores.
+Moltres and MOOSE allow use of different basis functions for different system variables.
+Because of the purely diffusive nature of the neutron diffusion equations, neutron fluxes are
+typically discretized using continuous first-degree Lagrange polynomials and the degrees of
+freedom are associated with mesh nodes. The temperature variable may also be discretized
+with a continuous Lagrange basis, or a discontinuous basis of arbitrary degree monomials
+may be employed depending on the relative balance of heat convection to conduction. The
+purely hyperbolic precursor transport is currently discretized using constant monomials,
+which is equivalent to a first-order finite volume discretization. Moltres supports both
+segregated (through Picard iteration) and monolithic solutions of the equation system.
+However, due to the feedback between the power spectrum and temperature dependence
+of macroscopic cross-sections, monolithic solves have demonstrated superior robustness
+with segregated techniques often unable to converge to a solution. This result emphasizes
+the importance of a fully coupled multi-physics framework like the one that Moltres and
+MOOSE provide and suggests that iteratively coupling codes devoted to single physics
+(K{\'o}ph{\'a}zi, Lathouwers, and Kloosterman 2009) may result in limited flexibility.},
+	number = {21},
+	urldate = {2018-01-08},
+	journal = {The Journal of Open Source Software},
+	author = {Lindsay, Alexander and Huff, Kathryn},
+	month = jan,
+	year = {2018},
+	doi = {10.21105/joss.00298},
+	pages = {1--2},
+	file = {Full Text PDF:/Users/khuff/Zotero/storage/MJIZZW4P/Lindsay and Huff - 2018 - Moltres finite element based simulation of molten.pdf:application/pdf;Snapshot:/Users/khuff/Zotero/storage/E3ARQ46H/joss.html:text/html}
+}
+
+@techreport{bae_non-algorithmic_2017,
+	address = {Urbana, IL},
+	type = {Graduate {Report}},
+	title = {Non-algorithmic {Capability} {Gaps} for {Cyclus} and {Cycamore} transition analyses},
+	url = {https://github.com/arfc/transition-scenarios},
+	abstract = {As part of NEUP-FY16-10512, fuel cycle
+transition scenarios were simulated using Cyclus and existing Cycamore archetypes.
+
+The purpose of this study
+is to identify current non-algorithmic gaps in the capabilities necessary for key transition scenarios.
+
+The gaps identified through this exercise mainly pertain to the greedy exchange model, and the manual, static parameter of fuel cycle facilities. 
+
+The scenarios are from the Idaho National Laboratory Nuclear Fuel Cycle Evaluation and Screening Report. The transition scenarios begin with EG01 and transition to EG23, EG24, EG29, EG30,
+separately.},
+	number = {UIUC-ARFC-2017-02},
+	institution = {University of Illinois at Urbana-Champaign},
+	author = {Bae, Jin Whan and Huff, Kathryn D.},
+	month = nov,
+	year = {2017},
+	doi = {10.5281/zenodo.1145439},
+	keywords = {arfc, report},
+	pages = {0--12},
+	file = {uiuc-arfc-2017-02.pdf:/Users/khuff/Zotero/storage/3GFDQRRG/uiuc-arfc-2017-02.pdf:application/pdf}
+}
+
+@article{fischer_petascale_2008,
+	title = {Petascale algorithms for reactor hydrodynamics},
+	volume = {125},
+	issn = {1742-6596},
+	doi = {10.1088/1742-6596/125/1/012076},
+	abstract = {We describe recent algorithmic developments that have enabled large eddy simulations of reactor flows on up to P = 65, 000 processors on the IBM BG/P at the Argonne Leadership Computing Facility.},
+	number = {1},
+	journal = {Journal of Physics: Conference Series},
+	author = {Fischer, P and Lottes, J and Pointer, D and Siegel, A},
+	month = jul,
+	year = {2008},
+	pages = {012076},
+	file = {P_Fischer_2008_J._Phys.%3A_Conf._Ser._125_012076.pdf:/Users/khuff/Zotero/storage/2AMDG798/P_Fischer_2008_J._Phys.%3A_Conf._Ser._125_012076.pdf:application/pdf}
+}
+
+@techreport{huff_coupled_2017,
+	type = {Blue {Waters} {Annual} {Report}},
+	title = {Coupled {Multi}-{Physics} of {Advanced} {Molten} {Salt} {Nuclear} {Reactors}},
+	url = {https://bluewaters.ncsa.illinois.edu/apps/docs/BW_AR_2017_linked.pdf},
+	abstract = {The Advanced Reactors and Fuel Cycles Group (ARFC) conducts
+modeling and simulation in the context of nuclear reactors and
+fuel cycles and toward the improved safety and sustainability of
+nuclear power. In the context of high-performance computing, this
+work requires the coupling of multiple physics models at multiple
+scales to model and simulate the design, safety, and performance
+of advanced nuclear reactors. In particular, thermal{\textendash}hydraulic
+phenomena, neutron transport, and fuel performance couple
+tightly in nuclear reactors. Detailed spatially and temporally
+resolved neutron flux and temperature distributions can improve
+designs, help characterize performance, inform reactor safety
+margins, and enable validation of numerical modeling techniques
+for those unique physics. In the work presented here, conducted
+on Blue Waters, ARFC has demonstrated the capability to simulate
+coupled, transient neutronics and thermal hydraulics in an
+advanced, molten-salt-fueled nuclear reactor.},
+	urldate = {2018-01-23},
+	institution = {National Center for Supercomputing Applications},
+	author = {Huff, Kathryn and Lindsay, Alexander},
+	year = {2017},
+	note = {https://bluewaters.ncsa.illinois.edu/apps/docs/BW\_AR\_2017\_linked.pdf},
+	pages = {136--137},
+	file = {2017_annual_report.pdf:/Users/khuff/Zotero/storage/NFINDBPD/2017_annual_report.pdf:application/pdf;Blue Waters User Portal | Annual Report:/Users/khuff/Zotero/storage/HQZWV32L/annual-report.html:text/html}
+}
+
+@inproceedings{ridley_introduction_2017,
+	address = {Washington D.C.},
+	title = {An {Introduction} to {Moltres}, an {MSR} {Multiphysics} {Code}},
+	url = {http://arfc.github.io/pres/2017-10-31-moltres.pdf},
+	booktitle = {Transactions of the {American} {Nuclear} {Society}},
+	publisher = {American Nuclear Society},
+	author = {Ridley, Gavin and Lindsay, Alexander and Huff, Kathryn},
+	month = oct,
+	year = {2017}
+}
+
+@article{rykhlevskii_arfc/saltproc:_2018,
+	title = {arfc/saltproc: {Code} for online reprocessing simulation of molten salt reactor with external depletion solver {SERPENT}},
+	shorttitle = {arfc/saltproc},
+	url = {https://zenodo.org/record/1196455#.WqrE_BPwaA0},
+	doi = {10.5281/zenodo.1196455},
+	abstract = {The script is re-run SERPENT 2 burnup simulation, and after each step removes target isotopes with specific efficiency, keep number density of target isotopes constant and keep track of Pa-233 --{\textgreater} U-233 decaying in the separate tank.},
+	urldate = {2018-03-15},
+	journal = {Zenodo},
+	author = {Rykhlevskii, Andrei and Bae, Jin Whan and Huff, Kathryn},
+	month = mar,
+	year = {2018},
+	doi = {10.5281/zenodo.1196455},
+	keywords = {Fuel cycle, MSBR, MSR, online refueling, online reprocessing, salt separations, salt treatment, thorium cycle},
+	file = {Zenodo Snapshot:/Users/khuff/Zotero/storage/Z6YA3XBL/1196455.html:text/html;Zenodo Snapshot:/Users/khuff/Zotero/storage/7YGYH6A6/1196455.html:text/html}
+}
+
+@techreport{bae_numerical_2018,
+	address = {Urbana, IL},
+	type = {Graduate {Report}},
+	title = {Numerical {Experiments} for {Verifying} {Demand} {Driven} {Deployment} {Algorithms}},
+	url = {https://github.com/arfc/ddca_numerical_exp},
+	abstract = {For many fuel cycle simulations, it is currently up to the user to define a deployment scheme, or facility parameters, to make sure that there{\textquoteright}s no gap in the supply chain. Or, the same goal is achieved by setting the facility capacity to infinity, which does not reflect real-world conditions.
+The Demand-Driven Cycamore Archetype project (NEUP-FY16-10512) aims to develop Cycamore demand-driven deployment capabilities. The developed algorithm, in the form of Cyclus Institution agent, deploys Facilities to meet the front-end and back-end demands of the fuel cycle.
+This report describes numerical tests for non-optimizing, deterministic- optimizing and stochastic-optimizing prediction algorithms.
+These prediction models are being developed by the University of South Carolina. In this report, we discuss numerical experiments for testing the non-optimizing, deterministic optimizing and stochastic optimizing meth- ods. The numerical experiments will be designed for both the once through nuclear fuel cycle and advanced fuel cycles.},
+	number = {UIUC-ARFC-2018-01},
+	institution = {University of Illinois at Urbana-Champaign},
+	author = {Bae, Jin Whan and Chee, Gwendolyn and Huff, Kathryn},
+	month = apr,
+	year = {2018},
+	keywords = {arfc, report},
+	pages = {0--21},
+	file = {Bae et al. - 2018 - Numerical Experiments for Verifying Demand Driven .pdf:/Users/khuff/Zotero/storage/5X9YWIQW/Bae et al. - 2018 - Numerical Experiments for Verifying Demand Driven .pdf:application/pdf}
+}
+
+@mastersthesis{rykhlevskii_advanced_2018,
+	title = {Advanced  online fuel reprocessing simulation for {Thorium}-fueled {Molten} {Salt} {Breeder} {Reactor}},
+	copyright = {Copyright 2018 Andrei Rykhlevskii},
+	shorttitle = {Advanced online fuel reprocessing simulation for thorium-fueled molten salt breeder reactor},
+	abstract = {Current interest in advanced nuclear energy and MSR concepts has enhanced demand in building the tools to analyze these systems. This thesis introduces a Python script, SaltProc, which simulates MSR online reprocessing by modeling the changing isotopic composition of an irradiated fuel salt. SaltProc couples with the Monte Carlo code, SERPENT 2, for neutron transport and depletion calculations. SaltProc capabilities include a generic geometry capable of modeling multi-region and multi-flow systems, time-dependent feeds and removals, and specific separation efficiency for each element or isotope removal flow. Generally applicable capabilities are illuminated in this thesis in three applied problems: (1) simulating the startup of a thorium-fueled MSBR fuel cycle to find equilibrium fuel composition (when multiplication factor of the full-core model and the U-233 concentration in the fuel salt are invariant in time); (2) determining the effect of the fuel salt irradiation with online reprocessing on MSBR operations; and (3) estimating MSBR fuel cycle performance by computing the Th-232 feed rate over 20 years of operation and comparing with available data. In the first application, full-core depletion in the MSBR demonstrated that (1) equilibrium fuel composition could be achieved after 16 years and (2) the multiplication factor stabilizes after 6 years of operation. In the second application, fuel salt irradiation with simulated fission product removal and fissile/fertile feed causes considerable neutron energy spectrum hardening; this spectral shift has a problematic impact on safety parameters (e.g., temperature reactivity feedback, reactivity control system worth). In the third application, the average Th-232 feed rate throughout 20 years of operation is 2.39 kg/day or 100 g/GWh(e) which is a good agreement with other recent research. Problematic effects of neutron energy spectrum hardening during MSBR operation should be taken into account for neutronics, multi-physics, and fuel cycle performance analysis.},
+	language = {English},
+	urldate = {2018-09-27},
+	school = {University of Illinois at Urbana-Champaign},
+	author = {Rykhlevskii, Andrei},
+	collaborator = {Kozlowski, Tomas and Huff, Kathryn},
+	month = apr,
+	year = {2018},
+	file = {Fulltext:/Users/khuff/Zotero/storage/SBUDQM3I/Rykhlevskii - 2018 - Advanced online fuel reprocessing simulation for t.pdf:application/pdf;ms_rykhlevskii_msbr_reproc.pdf:/Users/khuff/Zotero/storage/EI334QNX/ms_rykhlevskii_msbr_reproc.pdf:application/pdf;Snapshot:/Users/khuff/Zotero/storage/LWTBSFX7/101052.html:text/html}
+}
+
+@misc{mumm_professor_2018,
+	address = {Urbana, IL},
+	title = {Professor {Kathryn} {Huff} on the {Possibilities} in {NPRE}},
+	url = {https://www.youtube.com/watch?v=w9d_QMW1hA4},
+	abstract = {Assistant Professor in Nuclear, Plasma, and Radiological Engineering talks about students in NPRE and the opportunities that the major has to offer.},
+	urldate = {2018-07-06},
+	publisher = {Illinois Engineering},
+	author = {Mumm, Susan},
+	collaborator = {{Illinois Engineering} and Huff, Kathryn D.},
+	month = mar,
+	year = {2018},
+	note = {media},
+	file = {Snapshot:/Users/khuff/Zotero/storage/PLZD3J8V/watch.html:text/html}
+}
+
+@article{silver_microsofts_2018,
+	series = {In {Focus}},
+	title = {Microsoft{\textquoteright}s purchase of {GitHub} leaves some scientists uneasy},
+	volume = {558},
+	copyright = {2018 Nature},
+	shorttitle = {They fear the online platform will become less open, but other researchers say the buyout could make {GitHub} more useful.},
+	url = {http://www.nature.com/articles/d41586-018-05426-0},
+	doi = {doi: 10.1038/d41586-018-05426-0},
+	abstract = {They fear the data-sharing website will become less open, but other researchers say the buyout could make GitHub more useful.},
+	language = {EN},
+	urldate = {2018-07-06},
+	journal = {Nature},
+	author = {Silver, Andrew},
+	month = jun,
+	year = {2018},
+	note = {media},
+	pages = {353},
+	file = {Snapshot:/Users/khuff/Zotero/storage/ZXWE55CU/d41586-018-05426-0.html:text/html}
+}
+
+@misc{huff_modeling_2018,
+	address = {Ann Arbor, MI},
+	type = {Invited {Seminar}},
+	title = {Modeling and {Simulation} at {Disparate} {Scales}: {Molten} {Salt} {Reactor} {Physics} and {International} {Fuel} {Cycle} {Transitions}},
+	url = {https://katyhuff.github.io/2018-02-16-ners/#/},
+	abstract = {The world's energy future depends on improved safety and sustainability of nuclear reactor designs and fuel cycle strategies. Insights can be drawn from numerical experiments that model and simulate these systems. Both reactor and nuclear fuel cycle dynamics are sufficiently complex that sophisticated scientific software methods and high-performance computing resources are essential to understanding them. Furthermore, improved reproducibility and verification in these numerical experiments can be achieved through judicious use of scientific computing best practices. Using examples drawn from spent nuclear fuel management and advanced reactor design, this talk will describe the role and benefits of modeling and simulation combining insights from multiple scales in nuclear engineering challenges. The talk will introduce Moltres, a new physics application for multiphysics modeling of liquid-fueled molten salt reactors. The neutronics model, thermal hydraulics model, and their coupling in the MOOSE framework will be described. Results for many-channel configurations in 2D-axisymmetric and 3D coordinates will be presented and compared against other coupled models as well as the Molten Salt Reactor Experiment. This talk will also touch on isotope identification with neural networks and recent transition analyses using Cyclus, an agent-based nuclear fuel cycle simulation framework.},
+	author = {Huff, Kathryn D.},
+	month = feb,
+	year = {2018}
+}
+
+@article{timmins_power_2018,
+	title = {Power {Source}: {Nuclear} engineer {Katy} {Huff} on teaching with {IPython}, reactor theory and the future of energy},
+	volume = {[InClass] Engineering},
+	shorttitle = {Power {Source}},
+	url = {https://illinoisalumni.org/2018/08/01/in-class-power-source/},
+	abstract = {Nuclear engineer Katy Huff on teaching with IPython, reactor theory and the future of energy.},
+	language = {Engilish},
+	number = {Summer 2018},
+	journal = {University of Illinois Alumni Magazine},
+	author = {Timmins, Mary},
+	collaborator = {Huff, Kathryn},
+	month = aug,
+	year = {2018},
+	note = {media},
+	pages = {13},
+	file = {Timmins - 2018 - Power Source Nuclear engineer Katy Huff on teachi.pdf:/Users/khuff/Zotero/storage/4DFG69KU/Timmins - 2018 - Power Source Nuclear engineer Katy Huff on teachi.pdf:application/pdf}
+}
+
+@incollection{huff_chapter_2019,
+	address = {Cambridge, MA, United States},
+	edition = {1},
+	title = {Chapter {One} - {Economics} of {Advanced} {Reactors} and {Fuel} {Cycles}},
+	volume = {1},
+	isbn = {978-0-12-813975-2},
+	url = {http://www.sciencedirect.com/science/article/pii/B9780128139752000016},
+	abstract = {Many dynamic factors influence nuclear reactor and fuel cycle economics. Costs drive the equation, but policies affecting electricity pricing also influence nuclear power revenues at a fundamental level. In current reactors and their associated fuel cycles, capital, operation, and maintenance costs increasingly dominate the economics of nuclear power.
+Advanced reactor designs and fuel cycle choices can impact these costs both positively
+and negatively. While fuel cycle advancements also impact fuel costs, this component has a relatively small impact on the overall cost of nuclear electricity production, particularly in comparison to capital costs. If advanced reactors can offer very high-temperature heat appropriate for industrial processing, natively couple with storage technologies, or can otherwise acheive load following behavior, then they may become more financially feasible than the current fleet.},
+	booktitle = {Storage and {Hybridization} of {Nuclear} {Energy}},
+	publisher = {Science \& Technology Books Elsevier, Inc.},
+	author = {Huff, Kathryn},
+	editor = {Bindra, Hitesh},
+	month = jan,
+	year = {2019},
+	doi = {10.1016/B978-0-12-813975-2.00001-6},
+	keywords = {Advanced nuclear fuel cycles, Advanced nuclear reactors, Conversion, Economics, Enrichment, Fuel cycles, Fuel fabrication, Levelized cost of electricity, Milling, Mining, Reprocessing, Waste management},
+	pages = {1--20},
+	file = {Huff - 2018 - Economics of Advanced Reactors and Fuel Cycles (In.pdf:/Users/khuff/Zotero/storage/A82V2LSU/Huff - 2018 - Economics of Advanced Reactors and Fuel Cycles (In.pdf:application/pdf;ScienceDirect Snapshot:/Users/khuff/Zotero/storage/N6A4JEIS/B9780128139752000016.html:text/html}
+}
+
+@article{kamuda_comparison_2018,
+	title = {A comparison of machine learning methods for automated gamma-ray spectroscopy},
+	issn = {0168-9002},
+	url = {http://www.sciencedirect.com/science/article/pii/S0168900218313779},
+	doi = {10.1016/j.nima.2018.10.063},
+	abstract = {Pattern recognition algorithms such as artificial neural networks (NNs) and convolution neural networks (CNNs) are prime candidates to perform automated gamma-ray spectroscopy. The way these models train and operate mimic how trained spectroscopists identify spectra. These models have shown promise in identifying gamma-ray spectra with large calibration drift and unknown background radiation fields. In this work, two algorithms for mixtures of radioisotopes based on NN and CNN are presented and evaluated.},
+	urldate = {2018-11-02},
+	journal = {Nuclear Instruments and Methods in Physics Research Section A: Accelerators, Spectrometers, Detectors and Associated Equipment},
+	author = {Kamuda, Mark and Zhao, Jifu and Huff, Kathryn},
+	month = oct,
+	year = {2018},
+	keywords = {Automated isotope identification, Gamma-ray spectroscopy, Neural networks},
+	file = {ScienceDirect Full Text PDF:/Users/khuff/Zotero/storage/F5ALG4UY/Kamuda et al. - 2018 - A comparison of machine learning methods for autom.pdf:application/pdf;ScienceDirect Snapshot:/Users/khuff/Zotero/storage/PG4A68CJ/S0168900218313779.html:text/html}
+}
+
+@misc{huff_neutron_2019,
+	address = {Spokane, WA},
+	type = {Invited {Minisyposium} {Talk}},
+	title = {Neutron {Kinetics} in {Liquid}-{Fueled} {Nuclear} {Reactors}},
+	url = {https://katyhuff.github.io/2018-02-25-siam},
+	abstract = {Modeling and simulation of neutron kinetics in liquid-fueled nuclear reactors incorporates three major challenging components. First, it is necessary to establish the dynamic evolution of fuel composition via depletion and online reprocessing. Additionally, multiphysics analysis of the thermal hydraulics and neutronics in such a reactor must incorporate thermal feedbacks and material expansion feedbacks. Finally, drift of delayed neutron precursors must be incorporated into the kinetics analysis due to the mobility of the liquid fuel. This talk will discuss all three components. Toward the first component, a discussion of the SaltProc python package will establish the fuel composition dynamics capabilities necessary for fuel composition depletion in the context of online reprocessing. Toward the second component, a point kinetics model implementation in PyRK, and a more sophisticated advection model implementation in Moltres will be discussed. Finally, incorporation in Moltres of neutron diffusion and precursor equations will be discussed as will their implementation using the MOOSE action system.},
+	author = {Huff, Kathryn D.},
+	month = feb,
+	year = {2019}
+}
+
+@article{rykhlevskii_modeling_2019,
+	title = {Modeling and simulation of online reprocessing in the thorium-fueled molten salt breeder reactor},
+	volume = {128},
+	issn = {0306-4549},
+	url = {http://www.sciencedirect.com/science/article/pii/S0306454919300350},
+	doi = {10.1016/j.anucene.2019.01.030},
+	abstract = {In the search for new ways to generate carbon-free, reliable base-load power, interest in advanced nuclear energy technologies, particularly Molten Salt Reactors (MSRs), has resurged with multiple new companies pursuing MSR commercialization. To further develop these MSR concepts, researchers need simulation tools for analyzing liquid-fueled MSR depletion and fuel processing. However, most contemporary nuclear reactor physics software is unable to perform high-fidelity full-core depletion calculations for a reactor design with online reprocessing. This paper introduces a Python package, SaltProc, which couples with the Monte Carlo code, SERPENT2 to simulate MSR online reprocessing by modeling the changing isotopic composition of MSR fuel salt. This work demonstrates SaltProc capabilities for a full-core, high-fidelity model of the commercial Molten Salt Breeder Reactor (MSBR) concept and verifies these results to results in the literature from independent, lower-fidelity analyses.},
+	urldate = {2019-01-25},
+	journal = {Annals of Nuclear Energy},
+	author = {Rykhlevskii, Andrei and Bae, Jin Whan and Huff, Kathryn D.},
+	month = jun,
+	year = {2019},
+	keywords = {agent based modeling, Depletion, Finite elements, Hydrologic contaminant transport, Molten salt breeder reactor, Molten salt reactor, MOOSE, Multiphysics, nuclear engineering, Nuclear fuel cycle, Object orientation, Online reprocessing, Parallel computing, Python, Reactor physics, repository, Salt treatment, Simulation, Systems analysis},
+	pages = {366--379},
+	file = {Rykhlevskii et al. - 2018 - Modeling and Simulation of Online Reprocessing in .pdf:/Users/khuff/Zotero/storage/Q5ABM9YG/Rykhlevskii et al. - 2018 - Modeling and Simulation of Online Reprocessing in .pdf:application/pdf;ScienceDirect Full Text PDF:/Users/khuff/Zotero/storage/8V55B4PR/Rykhlevskii et al. - 2019 - Modeling and simulation of online reprocessing in .pdf:application/pdf;ScienceDirect Full Text PDF:/Users/khuff/Zotero/storage/HJSJARBI/Rykhlevskii et al. - 2019 - Modeling and simulation of online reprocessing in .pdf:application/pdf;ScienceDirect Snapshot:/Users/khuff/Zotero/storage/P6PJ667C/S0306454919300350.html:text/html;ScienceDirect Snapshot:/Users/khuff/Zotero/storage/W5RDKFMS/S0306454919300350.html:text/html}
+}
+
+@article{bae_standardized_2019,
+	title = {Standardized verification of the {Cyclus} fuel cycle simulator},
+	volume = {128},
+	issn = {0306-4549},
+	url = {http://www.sciencedirect.com/science/article/pii/S0306454919300179},
+	doi = {10.1016/j.anucene.2019.01.014},
+	abstract = {Many nuclear fuel cycle simulators can analyze transitions from once-through to advanced nuclear fuel cycles. Verification studies compare various fuel cycle analysis tools to test agreement and identify sources of difference. A recent verification study, Feng et al. (2016) established transition scenario test case specifications and accordingly evaluated national laboratory nuclear fuel cycle simulators, DYMOND, VISION, ORION, and MARKAL. This work verifies the performance of Cyclus, the agent-based, open-source fuel cycle simulator, using the test case specifications in Feng et. al. In this work, Cyclus demonstrates agreement with the results from the previous verification study. Minor differences reflect intentional, detailed material tracking in the Cycamore reactor module. These results extend the example results in Feng et al. to further enable future verification of additional nuclear fuel cycle simulation tools.},
+	urldate = {2019-01-25},
+	journal = {Annals of Nuclear Energy},
+	author = {Bae, Jin Whan and Peterson-Droogh, Joshua L. and Huff, Kathryn D.},
+	month = jun,
+	year = {2019},
+	keywords = {agent based modeling, C, Finite elements, Hydrologic contaminant transport, MOOSE, Multiphysics, nuclear engineering, Nuclear fuel cycle, Object orientation, Parallel computing, Reactor physics, repository, Simulation, Systems analysis, Verification},
+	pages = {288--291},
+	file = {Bae et al. - 2018 - Standardized Verification of the Cyclus Fuel Cycle.pdf:/Users/khuff/Zotero/storage/T6Q5G2AW/Bae et al. - 2018 - Standardized Verification of the Cyclus Fuel Cycle.pdf:application/pdf;ScienceDirect Full Text PDF:/Users/khuff/Zotero/storage/UXQWH3GA/Bae et al. - 2019 - Standardized verification of the Cyclus fuel cycle.pdf:application/pdf;ScienceDirect Snapshot:/Users/khuff/Zotero/storage/WFFQBL3B/S0306454919300179.html:text/html}
+}
+
+@inproceedings{fairhurst_implementation_2019,
+	address = {Seattle, WA, United States},
+	title = {Implementation of {Demand} {Driven} {Deployment} {Capabilities} in {Cyclus} for {Transition} {Scenarios}},
+	booktitle = {Proceedings of the {American} {Nuclear} {Society} 2019 {Global} {Conference}},
+	publisher = {American Nuclear Society},
+	author = {Fairhurst, Roberto E. and Chee, Gwendolyn J. and Bae, Jin Whan and Flanagan, Robert R. and Huff, Kathryn D.},
+	month = sep,
+	year = {2019}
+}
+
+@inproceedings{flanagan_methods_2019,
+	address = {Seattle, WA, United States},
+	title = {Methods for {Automated} {Fuel} {Cycle} {Facility} {Deployment}},
+	booktitle = {Proceedings of the {American} {Nuclear} {Society} 2019 {Global} {Conference}},
+	publisher = {American Nuclear Society},
+	author = {Flanagan, Robert R. and Bae, Jin Whan and Huff, Kathryn D. and Chee, Gwendolyn J. and Fairhurst, Roberto},
+	month = sep,
+	year = {2019}
+}
+
+@inproceedings{chee_demonstration_2019,
+	address = {Seattle, WA, United States},
+	title = {Demonstration of {Demand}-{Driven} {Deployment} {Capabilities} in {Cyclus}},
+	booktitle = {Proceedings of the {American} {Nuclear} {Society} 2019 {Global} {Conference}},
+	publisher = {American Nuclear Society},
+	author = {Chee, Gwendolyn and Bae, Jin Whan and Huff, Kathryn D. and Flanagan, Robert R. and Fairhurst, Roberto},
+	month = sep,
+	year = {2019}
+}
+
+@misc{rykhlevskii_simulation_2019,
+	address = {Spokane, WA},
+	type = {Conference},
+	title = {Simulation of {Molten} {Salt} {Reactors} with {Moltres}},
+	url = {https://github.com/arfc/2019-rykhl-siam},
+	abstract = {The Advanced Reactors and Fuel Cycles (ARFC) group models and simulates the design, safety, and performance of advanced nuclear reactors. For these simulations coupling between physics such as neutron transport, thermal-hydraulics phenomena, and fuel performance must be taken into account. Our group performs high fidelity simulation of Gen IV reactor designs through development of models and tools for representing unique materials, complex geometries, and physical phenomena. Current work introduces an extension of the MOOSE framework, Moltres, to appropriately model coupled thermal-hydraulics and neutronics of promising liquid-fueled Molten Salt Reactor designs.
+
+Initial simulations of the Molten Salt Reactor Experiment (MSRE) have been conducted on Blue Waters supercomputer with deterministic multiphysics. Steady state, transient, and fuel cycle analysis simulations have been run in 2D as well as 3D and compared against the Molten Salt Reactor Experiment. These simulations have occupied up to many hundreds of nodes simultaneously and have resulted in rich datasets for use in reactor design and analysis. This talk will describe how coupling between neutronics and thermal hydraulics have been established in the Moltres as well as the validation and verification efforts which have been completed.},
+	author = {Rykhlevskii, Andrei},
+	collaborator = {Lindsay, Alexander and Huff, Kathryn D},
+	month = feb,
+	year = {2019},
+	file = {Rykhlevskii - 2019 - Simulation of Molten Salt Reactors with Moltres.pdf:/Users/khuff/Zotero/storage/6KIVNTY2/Rykhlevskii - 2019 - Simulation of Molten Salt Reactors with Moltres.pdf:application/pdf}
+}
+
+@article{huff_rapid_2017,
+	title = {Rapid methods for radionuclide contaminant transport in nuclear fuel cycle simulation},
+	volume = {114},
+	issn = {0965-9978},
+	url = {http://www.sciencedirect.com/science/article/pii/S0965997817302703},
+	doi = {10.1016/j.advengsoft.2017.07.006},
+	abstract = {Nuclear fuel cycle and nuclear waste disposal decisions are technologically coupled. However, current nuclear fuel cycle simulators lack dynamic repository performance analysis due to the computational burden of high-fidelity hydrolgic contaminant transport models. The Cyder disposal environment and repository module was developed to fill this gap. It implements medium-fidelity hydrologic radionuclide transport models to support assessment appropriate for fuel cycle simulation in the Cyclus fuel cycle simulator. Rapid modeling of hundreds of discrete waste packages in a geologic environment is enabled within this module by a suite of four closed form models for advective, dispersive, coupled, and idealized contaminant transport: a Degradation Rate model, a Mixed Cell model, a Lumped Parameter model, and a 1-D Permeable Porous Medium model. A summary of the Cyder module, its timestepping algorithm, and the mathematical models implemented within it are presented. Additionally, parametric demonstrations simulations performed with Cyder are presented and shown to demonstrate functional agreement with parametric simulations conducted in a standalone hydrologic transport model, the Clay Generic Disposal System Model developed by the Used Fuel Disposition Campaign Department of Energy Office of Nuclear Energy.},
+	urldate = {2019-03-03},
+	journal = {Advances in Engineering Software},
+	author = {Huff, Kathryn},
+	month = dec,
+	year = {2017},
+	note = {https://doi.org/10.1016/j.advengsoft.2017.07.006},
+	keywords = {agent based modeling, Hydrologic contaminant transport, nuclear engineering, Nuclear fuel cycle, Nuclear Fuel Cycle, Object orientation, repository, Repository, simulation, Simulation, Systems analysis},
+	pages = {268--281},
+	file = {ScienceDirect Full Text PDF:/Users/khuff/Zotero/storage/PMST2RA5/PMST2RA5.pdf:application/pdf;ScienceDirect Full Text PDF:/Users/khuff/Zotero/storage/XR4V3VZV/Huff - Rapid methods for radionuclide contaminant transpo.pdf:application/pdf;ScienceDirect Snapshot:/Users/khuff/Zotero/storage/27XJEXE8/S0965997817302703.html:text/html;ScienceDirect Snapshot:/Users/khuff/Zotero/storage/34UH4PHR/S0965997817302703.html:text/html;ScienceDirect Snapshot:/Users/khuff/Zotero/storage/ZETJXGMB/S0965997817302703.html:text/html}
+}
+
+@article{bae_deep_2019,
+	title = {Deep {Learning} {Approach} to {Nuclear} {Fuel} {Transmutation} in a {Fuel} {Cycle} {Simulator}},
+	journal = {Submitted},
+	author = {Bae, Jin Whan and Chee, Gwendolyn J., Chee and Huff, Kathryn D.},
+	year = {2019},
+	note = {github.com/jbae11/depletion\_rom}
+}
+
+@inproceedings{chee_simulation_2019,
+	address = {Phoenix, AZ},
+	title = {Simulation of {Spent} {Nuclear} {Fuel} loading into a {Final} {Waste} {Repository}},
+	booktitle = {{WM} {Symposia} 2019 {Proceedings}},
+	author = {Chee, Gwendolyn J. and Huff, Kathryn D.},
+	month = apr,
+	year = {2019},
+	file = {Gwendolyn J. Chee and Kathryn D. Huff - 2019 - Simulation of Spent Nuclear Fuel loading into a Fi.pdf:/Users/khuff/Zotero/storage/8BZG9D2S/Gwendolyn J. Chee and Kathryn D. Huff - 2019 - Simulation of Spent Nuclear Fuel loading into a Fi.pdf:application/pdf}
+}
+
+@misc{kugelmass_katy_2019,
+	address = {Urbana, IL},
+	title = {Katy {Huff}, {University} of {Illinois} on {Apple} {Podcasts}},
+	shorttitle = {?{Titans} {Of} {Nuclear} {\textbar} {Interviewing} {World} {Experts} on {Nuclear} {Energy}},
+	url = {https://www.titansofnuclear.com/katyhuff},
+	abstract = {?Show Titans Of Nuclear {\textbar} Interviewing World Experts on Nuclear Energy, Ep Ep. 145 - Katy Huff, University of Illinois - Apr 10, 2019},
+	language = {en-us},
+	urldate = {2019-04-12},
+	journal = {Titans Of Nuclear {\textbar} Interviewing World Experts on Nuclear Energy},
+	publisher = {Apple Podcasts},
+	author = {Kugelmass, Bret},
+	collaborator = {Huff, Kathryn D.},
+	month = apr,
+	year = {2019},
+	note = {media},
+	file = {Snapshot:/Users/khuff/Zotero/storage/D2I87WZJ/id1331598443.html:text/html}
+}
+
+@article{bae_synergistic_2019,
+	title = {Synergistic spent nuclear fuel dynamics within the {European} {Union}},
+	volume = {114},
+	issn = {0149-1970},
+	url = {http://www.sciencedirect.com/science/article/pii/S014919701930037X},
+	doi = {10.1016/j.pnucene.2019.02.001},
+	abstract = {The French 2012{\textendash}2015 Commission Nationale d{\textquoteright}Evaluation Reports emphasize preparation for a transition from Light Water Reactors (LWRs) to Sodium-Cooled Fast Reactors (SFRs). We used the Cyclus nuclear fuel cycle simulator to explore the feasibility of enabling a French transition to an SFR fleet by using Used Nuclear Fuel (UNF) from other European Union (EU) nations. A Cyclus simulation captured nuclear power deployment in the EU from 1970 to 2160. In this simulation, France begins its planned transition to SFRs as existing LWRs are decommissioned. These SFRs are fueled with UNF accumulated by other EU nations and reprocessed in France. The impact of reactor lifetime extensions and SFR breeding ratios on time-to-transition were investigated with additional simulations. These simulations demonstrate that France can avoid deployment of additional LWRs by accepting UNF from other EU nations, that lifetime extensions delay time-to-transition, and improved breeding ratios are not particularly impactful.},
+	urldate = {2019-04-15},
+	journal = {Progress in Nuclear Energy},
+	author = {Bae, Jin Whan and Singer, Clifford E. and Huff, Kathryn D.},
+	month = jul,
+	year = {2019},
+	keywords = {agent based modeling, Agent-based, European union, Finite elements, Hydrologic contaminant transport, MOOSE, Multiphysics, nuclear engineering, Nuclear fuel cycle, Object orientation, Parallel computing, Reactor physics, repository, Simulation, Spent nuclear fuel, Systems analysis, Transition},
+	pages = {1--12},
+	file = {Bae et al. - 2018 - Synergistic Spent Nuclear Fuel Dynamics Within the.pdf:/Users/khuff/Zotero/storage/3QBIMRIH/Bae et al. - 2018 - Synergistic Spent Nuclear Fuel Dynamics Within the.pdf:application/pdf;ScienceDirect Full Text PDF:/Users/khuff/Zotero/storage/FUTLQJAP/Bae et al. - 2019 - Synergistic spent nuclear fuel dynamics within the.pdf:application/pdf;ScienceDirect Snapshot:/Users/khuff/Zotero/storage/E9FXRY45/S014919701930037X.html:text/html}
+}
+
+@article{ashraf_fuel_2019,
+	title = {Fuel depletion analysis for a {Single}-fluid {Double}-zone {Thorium} {Molten} {Salt} {Reactor} ({SD}-{TMSR}) using {SERPENT} 2},
+	journal = {Submitted},
+	author = {Ashraf, Osama and Rykhlevskii, Andrei and Smirnov, Anton and Tikhomirov, G.V. and Huff, Kathryn D.},
+	year = {2019}
+}
+
+@inproceedings{rykhlevskii_fuel_2019,
+	address = {Portland, OR},
+	title = {Fuel {Cycle} {Performance} of {Fast} {Spectrum} {Molten} {Salt} {Reactor} {Designs}},
+	booktitle = {Proceedings of {Mathematics} and {Computation} 2019},
+	publisher = {American Nuclear Society},
+	author = {Rykhlevskii, Andrei and Betzler, Benjamin R. and Worrall, Andrew and Huff, Kathryn D.},
+	month = aug,
+	year = {2019}
+}
+
+@misc{huff_neutron_2019-1,
+	address = {West Lafayette, IN, United States},
+	type = {Seminar},
+	title = {Neutron {Kinetics} and {Dynamics} in {Liquid}-{Fueled} {Nuclear} {Reactors}},
+	abstract = {Modeling and simulation of neutron kinetics and dynamics in liquid-fueled, molten salt reactors incorporates three major challenging components. First, it is necessary to establish the dynamic  evolution of fuel composition via depletion and online reprocessing. Additionally, multiphysics analysis of the thermal hydraulics and neutronics in such a nuclear reactor must incorporate thermal feedbacks and material expansion feedbacks. Finally, drift of delayed neutron precursors must be incorporated into the kinetics analysis due to the mobility of the liquid fuel. This talk will discuss all three components. Toward the first component, a discussion of the SaltProc python package will establish the fuel composition dynamics capabilities necessary for fuel composition depletion in the context of online reprocessing. Toward the second component, a point kinetics model implementation in PyRK, and a more sophisticated advection model implementation in Moltres will be discussed, including neutron diffusion and precursor drift equations in Moltres as well as their implementation using the MOOSE action system. Finally, future directions for Moltres and SaltProc development will be noted.},
+	author = {Huff, Kathryn D.},
+	month = feb,
+	year = {2019}
+}
+
+@techreport{heald_investigation_2018,
+	address = {Urbana, IL},
+	type = {{UIUC} {Technical} {Report}},
+	title = {Investigation of {Agricultural} {Uses} of {Nuclear} {Waste} {Heat}. {UIUC} {Technical} {Report}. {October}, 2018.},
+	abstract = {Nuclear power plants (NPPs) produce significant quantities of waste heat due to the low thermal efficiency of the Rankine cycle. This waste heat carries roughly two-thirds of the total power generated at a nuclear power plant. It is responsibly released to the environment as a warm water flow, carrying with it a massive amount of low-grade thermal energy. As of now, this energy is lost from all Exelon NPPs. This waste heat is essentially a free source of energy and utilization projects offer the potential to significantly increase the thermal efficiency and profitability of centralized power generating stations, in particular NPPs.
+Agricultural projects, particularly climate-controlled greenhouses, may show the most dramatic benefit from waste-heat utilization. Due to the relatively low temperature requirements of greenhouses, heating costs may be eliminated or cut substantially by the implementation of waste heat. The technical readiness of coupling central power generation station{\textquoteright}s waste heat discharge to climate-controlled greenhouses is high and has been demonstrated. Implementing this combined heat and power approach to Exelon{\textquoteright}s fleet of NPPs could offer significant advantages over fossil fueled power plants due to their high capacity factor, and strictly controlled and monitored water discharge.   
+Exelon NPPs at Braidwood, Byron, Dresden, and Calvert Cliffs hold potential to supply significant agricultural waste heat. Few regulations exist specific to the use of waste heat from NPPs, but the discharge of waste heat from NPPs is strictly regulated, mitigating potential for regulatory hurdles to its use in other industries. Waste heat from Exelon{\textquoteright}s NPPs is an untapped and potentially lucrative commodity. In the Midwest, the location of Exelon{\textquoteright}s NPPs offers interesting opportunities for waste heat use in agriculture. The cold Midwest climate is normally a limiting factor in crop diversity and heated greenhouses are an option for overcoming this issue, but the heating costs are a barrier themselves. With cooperation between growers and the Exelon Corporation, waste heat may be commoditized while also facilitating more efficient and diverse growing operations. Waste heat use is not limited to farming operations. There are a host of industries that can benefit from waste heat use that may be local to other power plants. The Calvert Cliffs Nuclear Power Plant is located ideally to facilitate the farming of oysters with waste heat or even provide heat for liquefied natural gas vaporization. 
+This report details a preliminary analysis to evaluate the potential for utilizing waste heat from NPPs. From the exhaustive review of past waste heat efforts, agricultural options, and primary economic and radiological factors, the technical readiness is shown to be high and the concept is sound. It is recommended that a detailed analysis should follow that includes: coupling candidate NPPs to specific greenhouse architectures, exploration of high-value crop options in prototypic and bounding event environments, and a detailed economic assessment.},
+	institution = {University of Illinois at Urbana-Champaign},
+	author = {Heald, Alexander L. and Miernicki, E.A. and Fairhurst, Roberto E. and Margenot, Andrew J. and Huff, Kathryn D. and Brooks, Caleb S.},
+	month = oct,
+	year = {2018},
+	file = {Heald et al. - 2018 - Investigation of Agricultural Uses of Nuclear Wast.pdf:/Users/khuff/Zotero/storage/8JH3NT4L/Heald et al. - 2018 - Investigation of Agricultural Uses of Nuclear Wast.pdf:application/pdf}
+}
+
+@inproceedings{chaube_dynamic_2019,
+	address = {Fukuoka, Japan},
+	title = {Dynamic {Transition} {Analysis} with {TIMES}},
+	booktitle = {I2CNER {Annual} {Symposium}},
+	publisher = {Kyushu University},
+	author = {Chaube, Anshuman and Stubbins, James and Huff, Kathryn D.},
+	month = feb,
+	year = {2019},
+	note = {(Presentation)}
+}
+
+@techreport{chaube_dynamic_2019-1,
+	address = {Urbana, IL},
+	type = {Technical {Report}},
+	title = {Dynamic {Transition} {Analysis} {With} {The} {Integrated} {Markal}-{EFOM} {System} ({TIMES}): {International} {Institute} for {Carbon}-{Neutral} {Energy} {Research} ({I}2CNER) {Project} {Report}},
+	url = {https://zenodo.org/record/3354538#.XT9WlpNKirw},
+	abstract = {We initiated a project in January 2018 to simulate dynamic transition scenarios for the energy industry in Japan to suggest pathways for minimizing carbon emissions. This report is a summary of the progress we have made so far, the challenges we currently face, and the future direction of this research.},
+	language = {eng},
+	number = {UIUC-ARFC-2019-02},
+	institution = {University of Illinois at Urbana-Champaign},
+	author = {Chaube, Anshuman and Huff, Kathryn D.},
+	collaborator = {Stubbins, James and Itaoka, Kenshi and Chapman, Andrew and Faradi, Hadi},
+	month = may,
+	year = {2019},
+	doi = {10.5281/zenodo.3354538},
+	keywords = {arfc, energy analysis, i2cner, japan, report},
+	pages = {0--17},
+	file = {Zenodo Full Text PDF:/Users/khuff/Zotero/storage/TGLY26H3/Anshuman Chaube and Kathryn Huff - 2019 - Dynamic Transition Analysis With The Integrated Ma.pdf:application/pdf}
+}
+
+@article{letzter_when_2019,
+	chapter = {Planet Earth},
+	title = {When {Chernobyl} {Blew}, {They} {Dumped} {Boron} and {Sand} into the {Breach}. {What} {Would} {We} {Do} {Today}?},
+	url = {https://www.livescience.com/65515-chernobyl-in-modern-times-nuclear-emergency.html},
+	abstract = {In 1986, the Soviets dumped sand and boron from helicopters onto the exposed Chernobyl uranium core. How would we handle it today?},
+	urldate = {2019-05-22},
+	journal = {Live Science},
+	author = {Letzter, Rafi},
+	month = may,
+	year = {2019},
+	note = {media},
+	file = {Snapshot:/Users/khuff/Zotero/storage/GQFHICX8/65515-chernobyl-in-modern-times-nuclear-emergency.html:text/html}
+}
+
+@article{hu_someday_2019,
+	title = {Someday the {U}.{S}. {Will} {Have} to {Actually} {Deal} {With} {Its} {Nuclear} {Waste} {Problem}},
+	volume = {Technology},
+	shorttitle = {Someday the {U}.{S}. {Will} {Have} to {Actually} {Deal} {With} {Its} {Nuclear} {Waste} {Problem}. {The} {Department} of {Energy} has made a move in that direction.},
+	url = {https://slate.com/technology/2019/06/department-of-energy-nuclear-waste-reclassification-yucca.html},
+	abstract = {The lack of solution is not from lack of discussion. There have been all sorts of wacky ideas floated about where to store nuclear waste.},
+	language = {en},
+	urldate = {2019-06-09},
+	journal = {Slate Magazine},
+	author = {Hu, Jane C.},
+	month = jun,
+	year = {2019},
+	note = {media},
+	file = {Snapshot:/Users/khuff/Zotero/storage/PD4VLBYM/department-of-energy-nuclear-waste-reclassification-yucca.html:text/html}
+}
+
+@techreport{sabharwall_micronuclear_2019,
+	address = {Idaho Falls, ID},
+	type = {{INL} {Limited} {Distribution}},
+	title = {{MicroNuclear} {Battery} {Thermal} and {Fluid} {Analysis} and {Multiphysics} {Modeling} {Challenges}},
+	shorttitle = {Contract {DE}-{AC}07-05ID14517},
+	abstract = {Molten salt reactor technology has many distinct advantages. Although many challenges come wit ha molten salt system, the advantages of such a system outweigh the challenges. Many organizations worldwide have undertaken research and development of molten salt reactors, with the possibility of a commercially deployed reactor by 2030. However, there is still much to do for the development and deployment of molten salt reactor technology.},
+	number = {INL/LTD-19-52963},
+	institution = {Idaho National Laboratory},
+	author = {Sabharwall, Piyush and Anderson, Nolan and Marotta, Paul and Christensen, Rich},
+	collaborator = {Huff, Kathryn D. and Wendt, Daniel S. and Jesse, Casey J. and Roper, Robin},
+	month = feb,
+	year = {2019},
+	file = {msr-multiphysics-gaps.pdf:/Users/khuff/Zotero/storage/WVFDTSMR/msr-multiphysics-gaps.pdf:application/pdf;Sabharwall et al. - 2019 - MicroNuclear Battery Thermal and Fluid Analysis an.pdf:/Users/khuff/Zotero/storage/CNMPL6GL/Sabharwall et al. - 2019 - MicroNuclear Battery Thermal and Fluid Analysis an.pdf:application/pdf}
+}
+
+@techreport{huff_identifying_2019,
+	address = {Urbana, IL},
+	type = {Technical {Report}},
+	title = {Identifying {MSR} {Multiphysics} {Modeling} {Challenges}},
+	shorttitle = {Contract {DE}-{AC}07-05ID14517},
+	url = {https://zenodo.org/record/3354563#.XT9bZ5NKirw},
+	abstract = {Solid fueled nuclear reactors differ from liquid fueled reactors with re- spect to many physical domains including neutronics, thermal hydraulics, and materials performance. Accordingly, liquid fueled reactors challenge the capabilities of conventional computational tools designed for modeling and simulating the physics of solid fueled reactors.},
+	language = {english},
+	number = {UIUC-ARFC-2019-01},
+	institution = {University of Illinois at Urbana-Champaign},
+	author = {Huff, Kathryn D.},
+	collaborator = {Sabharwall, Piyush},
+	month = feb,
+	year = {2019},
+	doi = {10.5281/zenodo.3354563},
+	keywords = {molten salt reactor, multiphysics, nuclear},
+	pages = {1--12},
+	file = {uiuc-arfc-2019-01.pdf:/Users/khuff/Zotero/storage/CSVHID3A/uiuc-arfc-2019-01.pdf:application/pdf;Zenodo Full Text PDF:/Users/khuff/Zotero/storage/RI2BAY9M/Kathryn Huff - 2019 - Identifying MSR Multiphysics Modeling Challenges.pdf:application/pdf}
+}
+
+@techreport{chee_transition_2019,
+	address = {Urbana, IL},
+	type = {Technical {Report}},
+	title = {Transition {Scenario} {Demonstrations} of {CYCAMORE} {Demand} {Driven} {Deployment} {Capabilities}},
+	shorttitle = {Contract {DE}-{NE}0008567},
+	url = {https://zenodo.org/record/3354507#.XT9MApNKirw},
+	abstract = {In many fuel cycle simulators, the user must define a deployment scheme for all supporting facilities to avoid supply chain gaps. To ease setting up nuclear fuel cycle simulations, Nuclear Fuel Cycle (NFC) simulators should bring demand-responsive deployment decisions into the dynamics of the simulation logic. Thus, a next-generation NFC simulator should predictively and automatically deploy fuel cycle facilities to meet a user-defined power demand. CYCLUS is an agent-based nuclear fuel cycle simulation framework [4]. In CYCLUS, each entity (i.e. Region, Institution, or Facility) in the fuel cycle is an agent. Region agents represent geographical or political areas that institution and facility agents can be grouped into. Institution agents control the deployment and decommission of facility agents and represents legal operating organizations such as a utility, government, etc. Facility agents represent nuclear fuel cycle facilities. CYCAMORE provides agents to represent process physics of various components in the nuclear fuel cycle (e.g. mine, fuel enrichment facility, reactor). The Demand-Driven CYCAMORE Archetypes project (NEUP-FY16-10512) aims to develop CYCLUS{\textquoteright} demand-driven deployment capabilities. This capability is added as a CYCLUS Institution agent that deploys facilities to meet the front-end and back-end fuel cycle demands based on a user-defined commodity demand. This demand-driven deployment capability is called d3ploy. In this paper, we explain the capabilities of d3ploy and demonstrate how d3ploy minimizes undersupply of all commodities in a few simulations while meeting key simulation constraints. Constant, linearly increasing, and sinusoidal power demand transition scenarios are demonstrated. Insights are discussed to inform parameter input decisions for future work in setting up larger transition scenarios that include many facilities. And finally, the more complex transition scenarios are demonstrated.},
+	language = {english},
+	number = {UIUC-ARFC-2019-03},
+	urldate = {2019-07-29},
+	institution = {University of Illinois at Urbana-Champaign},
+	author = {Chee, Gwendolyn and Fairhurst, Roberto and Huff, Kathryn},
+	month = jun,
+	year = {2019},
+	doi = {10.5281/zenodo.3354507},
+	keywords = {arfc, cyclus, nuclear fuel cycle, report},
+	pages = {1--23},
+	file = {Chee - 2019 - Transition Scenario Demonstrations of ARFC CYCAMOR.pdf:/Users/khuff/Zotero/storage/RV5PZF3E/Chee - 2019 - Transition Scenario Demonstrations of ARFC CYCAMOR.pdf:application/pdf;Zenodo Full Text PDF:/Users/khuff/Zotero/storage/FZWMCLYT/Gwendolyn Chee et al. - 2019 - Transition Scenario Demonstrations of CYCAMORE Dem.pdf:application/pdf}
+}
+
+@techreport{rykhlevskii_milestone_2019,
+	address = {Urbana, IL},
+	type = {Milestone {Report}},
+	title = {Milestone 2.1 {Report}: {Demonstration} of {SaltProc}},
+	shorttitle = {Contract {DE}-{AR}0000983, {Enabling} {Load} {Following} {Capability} in the {Transatomic} {MSR}},
+	url = {https://zenodo.org/record/3355649#.XUCSzpNKirw},
+	abstract = {The University of Illinois, Urbana-Champaign (UIUC) is engaged in work to develop a fuel processing system that enables load-following in Molten Salt Reactors (MSRs), an important ability that allows nuclear power plants to ramp electricity production up or down to meet changing electricity demand. Nuclear reactions in MSRs produce unwanted byproducts (such as xenon and krypton) that can adversely affect power production. In steady, baseload operation, these byproducts form and decay at the same rate. When electricity production is ramped down, however, the byproducts start to be produced at a greater rate than they decay, leading to a buildup within the reactor. When power production must be once again increased, the response rate is slowed by the time needed for the byproducts to reach their equilibrium level (determined by the radioactive decay half-life, which is on the order of hours). Thus, buildup of these unwanted byproducts resulting from ramping down inhibit proper load following for molten salt reactors. Fortunately, MSRs transport fuel in a flowing molten salt fuel loop, which means that a section of the reactor, outside the core, can be leveraged for fuel processing and "cleanup." The team will determine the feasibility of removal of these unwanted byproducts and de- sign a fuel reprocessing system, removing a major barrier to commercialization for molten salt reactors.
+
+Toward this work, we initiated the Fuel Cycle Simulation task (Task 2) in August 2018 to more realistically model the online reprocessing system of the Transatomic Power (TAP) MSR. A Python toolkit, SaltProc v0.1 [1{\textendash}3], was developed to represent the simplified online fuel salt processing of a Molten Salt Breeder Reactor (MSBR). More recently, an advanced SaltProc version (SaltProc v0.2) was developed to generically simulate complex molten salt fuel reprocessing systems, including the TAP system, incorporating user-parametrized components into the fuel salt processing design. This report summarizes the progress we have made towards milestone M2.1: Demonstrate SaltProc and the steps toward the subsequent Task 2 objectives.},
+	language = {english},
+	number = {UIUC-ARFC-2019-04 DOI: 10.5281/zenodo.3355649},
+	institution = {University of Illinois at Urbana-Champaign},
+	author = {Rykhlevskii, Andrei and Huff, Kathryn},
+	month = jun,
+	year = {2019},
+	doi = {10.5281/zenodo.3355649},
+	keywords = {arfc, cyclus, molten salt reactor, nuclear engineering, nuclear fuel cycle, report},
+	pages = {1--23},
+	file = {Huff - 2019 - Milestone 2.1 Report Demonstration of SaltProc.pdf:/Users/khuff/Zotero/storage/WJUPG67I/Huff - 2019 - Milestone 2.1 Report Demonstration of SaltProc.pdf:application/pdf;Zenodo Full Text PDF:/Users/khuff/Zotero/storage/BN8EED2W/Andrei Rykhlevskii and Kathryn Huff - 2019 - Milestone 2.1 Report Demonstration of SaltProc.pdf:application/pdf;Zenodo Full Text PDF:/Users/khuff/Zotero/storage/RYZ3VPVQ/Andrei Rykhlevskii and Kathryn Huff - 2019 - Milestone 2.1 Report Demonstration of SaltProc.pdf:application/pdf}
+}
